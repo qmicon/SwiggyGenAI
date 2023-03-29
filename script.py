@@ -150,7 +150,7 @@ class Crawler:
 		)
 
 		self.page = self.browser.new_page()
-		self.page.set_viewport_size({"width": 1280, "height": 1080})
+		self.page.set_default_navigation_timeout(0); self.page.set_default_timeout(0); self.page.set_viewport_size({"width": 1280, "height": 1080})
 
 	def go_to_page(self, url):
 		self.page.goto(url=url if "://" in url else "http://" + url)
@@ -168,7 +168,7 @@ class Crawler:
 			)
 
 	def click(self, id):
-		# Inject javascript into the page which removes the target= attribute from all links
+		print(id) # Inject javascript into the page which removes the target= attribute from all links
 		js = """
 		links = document.getElementsByTagName("a");
 		for (var i = 0; i < links.length; i++) {
@@ -572,12 +572,12 @@ if (
 
 	gpt_cmd = ""
 	prev_cmd = ""
-	_crawler.go_to_page("google.com")
+	_crawler.go_to_page("https://www.swiggy.com")
 	try:
 		while True:
 			browser_content = "\n".join(_crawler.crawl())
 			prev_cmd = gpt_cmd
-			gpt_cmd = get_gpt_command(objective, _crawler.page.url, prev_cmd, browser_content)
+			gpt_cmd = "CLICK 37" #get_gpt_command(objective, _crawler.page.url, prev_cmd, browser_content)
 			gpt_cmd = gpt_cmd.strip()
 
 			if not quiet:
