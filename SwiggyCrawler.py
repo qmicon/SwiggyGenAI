@@ -10,8 +10,8 @@ class SwiggyCrawler:
 			)
 		)
         self.page = self.browser.new_page()
-        self.page.set_default_navigation_timeout(30000)
-        self.page.set_default_timeout(30000)
+        self.page.set_default_navigation_timeout(40000)
+        self.page.set_default_timeout(40000)
         self.page.goto('https://www.swiggy.com/')
         login_link = self.page.wait_for_selector('a:has-text("Login")')
         login_link.click()
@@ -58,6 +58,23 @@ class SwiggyCrawler:
 
         return False
 
+    def search_suggestion_by_index(self, index):
+         # Need to call search_suggest first
+        if not self.search_suggest_elements:
+            print("call search suggest first")
+            return
+
+        button = self.search_suggest_elements[index]
+        res_name, res_category  = self.parse_search_suggest(button)
+        button.click()
+        if res_category == 'Restaurant':
+            self.page.wait_for_selector('div[data-testid="search-pl-restaurant-card"]')
+            self.search_elements = self.page.query_selector_all('div[data-testid="search-pl-restaurant-card"]')
+        elif res_category == 'Dish':
+            pass
+
+        return res_category
+
 
     def parse_search_suggest(self, search_suggest_button):
         elements = search_suggest_button.query_selector_all('div div')
@@ -66,6 +83,12 @@ class SwiggyCrawler:
         category = elements[1].inner_text()
         return (name, category)
 
+    def render_search_suggestions(self):
+        return_string = ""
+        for index, button in enumerate(self.search_suggest_elements):
+            res_name, res_category  = self.parse_search_suggest(button)
+            return_string+= f"\nid: {index}, name: {res_name}, category: {res_category}\n"
+        return return_string
     def parse_search_restaurant(self, search_div):
         res = {}
         a_tag = search_div.query_selector('div a')
@@ -101,7 +124,29 @@ class SwiggyCrawler:
                 element.click()
                 self.page.wait_for_selector('div[data-testid="normal-dish-item"]')
                 self.menu_elements = self.page.query_selector_all('div[data-testid="normal-dish-item"]')
+                self.expand_all_menu_items()
                 return
+
+    def render_search_restaurants(self):
+        res_string = ""
+        for index, element in enumerate(self.search_elements):
+            parsed_res = self.parse_search_restaurant(element)
+            status = parsed_res["Restaurant Status"]
+            name = parsed_res["Restaurant name"]
+            res_string+= f"\nid: {index}, name: {name} status: {status}\n"
+
+        return res_string
+
+    def search_restaurant_by_index(self, index):
+        try:
+            element = self.search_elements[index]
+            element.click()
+            self.page.wait_for_selector('div[data-testid="normal-dish-item"]')
+            self.menu_elements = self.page.query_selector_all('div[data-testid="normal-dish-item"]')
+            self.expand_all_menu_items()
+            return True
+        except:
+            return False
 
     def parse_menu_element(self, menu_div):
         '''
@@ -117,8 +162,25 @@ class SwiggyCrawler:
         '''
         return menu_div.inner_text()
 
+    def render_menu_items(self):
+        res_string = ""
+        for index, element in enumerate(self.menu_elements):
+            text = self.parse_menu_element(element)
+            IsCustomizable = 'Customisable' in text
+            name = text.split(".")[1]
+            res_string+= f"\nid: {index}, name: {name} customizable: {IsCustomizable}\n"
+
+        return res_string
+
+    def expand_all_menu_items(self):
+        self.page.wait_for_selector('button[aria-expanded="false"]')
+        buttons = self.page.query_selector_all('button[aria-expanded="false"]')
+        for button in buttons:
+            button.click()
+
     def add_menu_element(self, menu_div):
-        add_button = menu_div.query_selector('div[class="_3L1X9 _211P0 main_buttonInner__z6Jz0 main_button__3gpqi main_buttonNoImage__3ISPv"]')
+        add_button = menu_div.query_selector('div[class^="styles_itemAddButton"]')
+        add_button = add_button.query_selector('div')
         add_button.hover()
         add_button.click()
 
@@ -128,15 +190,29 @@ class SwiggyCrawler:
             if name in text:
                 self.add_menu_element(element)
                 if 'Customisable' in text:
-                    add = self.page.wait_for_selector('div[class="_3coNr"]')
-                    add.hover()
-                    add.click()
+                    print("Customization items are not supported, add it manually, you have 10 seconds")
+                    time.sleep(10)
                 return
+
+    def add_menu_item_by_index(self, index):
+        element = self.menu_elements[index]
+        text = self.parse_menu_element(element)
+        self.add_menu_element(element)
+        if 'Customisable' in text:
+            print("Customization items are not supported, add it manually, you have 10 seconds")
+            time.sleep(10)
 
     def add_and_checkout_menu_items(self, names):
         for name in names:
             self.add_menu_item(name)
         
+        view_cart = self.page.wait_for_selector('#view-cart-btn')
+        view_cart.click()
+
+    def add_and_checkout_menu_items_by_index(self, index_list):
+        for index in index_list:
+            self.add_menu_item_by_index(index)
+
         view_cart = self.page.wait_for_selector('#view-cart-btn')
         view_cart.click()
         
