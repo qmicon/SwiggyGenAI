@@ -1,4 +1,5 @@
 from playwright.sync_api import Playwright, sync_playwright
+import time
 
 class SwiggyCrawler:
     def __init__(self):
@@ -144,9 +145,8 @@ class SwiggyCrawler:
             self.page.wait_for_selector('div[data-testid="normal-dish-item"]')
             self.menu_elements = self.page.query_selector_all('div[data-testid="normal-dish-item"]')
             self.expand_all_menu_items()
-            return True
-        except:
-            return False
+        except Exception as e:
+            raise Exception(f"cannot find the index: {index}, error: {e}")
 
     def parse_menu_element(self, menu_div):
         '''
@@ -167,8 +167,9 @@ class SwiggyCrawler:
         for index, element in enumerate(self.menu_elements):
             text = self.parse_menu_element(element)
             IsCustomizable = 'Customisable' in text
+            IsNotAvailable = 'Next available' in text
             name = text.split(".")[1]
-            res_string+= f"\nid: {index}, name: {name} customizable: {IsCustomizable}\n"
+            res_string+= f"\nid: {index}, name: {name}, customizable: {IsCustomizable}, available: {not IsNotAvailable}\n"
 
         return res_string
 
@@ -187,6 +188,9 @@ class SwiggyCrawler:
     def add_menu_item(self, name):
         for element in self.menu_elements:
             text = self.parse_menu_element(element)
+            if 'Next available' in text:
+                print("This item is not available")
+                return
             if name in text:
                 self.add_menu_element(element)
                 if 'Customisable' in text:
@@ -195,24 +199,46 @@ class SwiggyCrawler:
                 return
 
     def add_menu_item_by_index(self, index):
-        element = self.menu_elements[index]
-        text = self.parse_menu_element(element)
-        self.add_menu_element(element)
-        if 'Customisable' in text:
-            print("Customization items are not supported, add it manually, you have 10 seconds")
-            time.sleep(10)
+        try:
+            element = self.menu_elements[index]
+            text = self.parse_menu_element(element)
+            if 'Next available' in text:
+                print("This item is not available")
+                return
+            self.add_menu_element(element)
+            if 'Customisable' in text:
+                print("Customization items are not supported, add it manually, you have 10 seconds")
+                time.sleep(10)
+            return True
+        except Exception as e:
+            raise Exception(f"cannot find the index: {index}, error: {e}")
+
+    def add_menu_item_by_index_x_times(self, index, x):
+        try:
+            self.add_menu_item_by_index(index)
+            div = self.page.locator('div[class^="styles_itemAddButton"]').nth(index)
+            add = div.locator('div div:has-text("+")')
+            for _ in range(x-1):
+                add.click()
+        except Exception as e:
+            raise Exception(f"cannot add menu item {index} {x} times, error: {e}")
+
+    def checkout(self):
+        try:
+            view_cart = self.page.wait_for_selector('#view-cart-btn')
+            view_cart.click()
+        except Exception as e:
+            raise Exception(f"cannot checkout, error: {e}")
 
     def add_and_checkout_menu_items(self, names):
         for name in names:
             self.add_menu_item(name)
-        
-        view_cart = self.page.wait_for_selector('#view-cart-btn')
-        view_cart.click()
+
+        self.checkout()
 
     def add_and_checkout_menu_items_by_index(self, index_list):
         for index in index_list:
             self.add_menu_item_by_index(index)
 
-        view_cart = self.page.wait_for_selector('#view-cart-btn')
-        view_cart.click()
+        self.checkout()
         
