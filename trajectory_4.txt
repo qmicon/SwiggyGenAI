@@ -1,5 +1,7 @@
 Instruction: Order veg thali from a dhaba
 Observation: Search Bar
+Action: THINK I need to first pull up menu of a dhaba.
+Observation: OK
 Action: SEARCH DHABA
 Observation: Search results for DHABA
 id:0,name:Dhaba Junction,,status:Open
@@ -18,6 +20,8 @@ id:12,name:Rang De Basanti Dhaba,,status:Open
 id:13,name:The Park,,status:Open
 id:14,name:Lords Dhaba,,status:Open
 id:15,name:Dhaba Junction,,status:Open
+Action: THINK Dhaba Junction closely resembles my search term. It is at index 0. 
+Observation: OK
 Action: CLICK 0
 Observation: Menu page for Dhaba Junction,
 id:0,item:Veg Thali
@@ -85,8 +89,12 @@ id:143,item:Bundi Raita
 id:144,item:Mixed Raita
 id:145,item:Special Lassi
 id:146,item:Gulab Jamun - 2pcs
+Action: THINK Veg Thali is the closest thing to the order and it is at index 0. I need to add it to the cart. 
+Observation: OK
 Action: ADD 0,1
 Observation: Added 1 of item 0 to cart
+Action: THINK I'm done with the order. Time to checkout. 
+Observation: OK
 Action: CHECKOUT
 Observation: Order placed!
 Action: 

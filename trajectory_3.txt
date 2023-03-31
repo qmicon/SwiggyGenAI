@@ -1,5 +1,7 @@
 Instruction: Order big grilled chicken from burger king
 Observation: Search Bar
+Action: THINK I need to first pull up menu of a Burger king 
+Observation: OK
 Action: SEARCH BURGER KING
 Observation: Search results for BURGER KING
 id:0,name:Burger King,,status:Open
@@ -18,6 +20,8 @@ id:12,name:The Chicken House,,status:Open
 id:13,name:The Chicken King,,status:Open
 id:14,name:The Milky Ride,,status:Open
 id:15,name:THE EGG STORY,,status:Open
+Action: THINK Burger King closely resembles my search term. It is at index 0. 
+Observation: OK
 Action: CLICK 0
 Observation: Menu page for Burger King,
 id:7,item:1 Jr Veg Whopper +1 Chocolate Thick Shake
@@ -120,8 +124,12 @@ id:158,item:Chicken Wings - five Pcs Fried + Five Pcs Grilled
 id:159,item:Chicken Wings Fried - Ten Pieces
 id:160,item:Chicken Wings Fried - Fifteen Pieces
 id:161,item:Chicken Wings Grilled - Fifteen Pcs
+Action: THINK Chicken Wings Grilled Fifteen Pcs is the closest thing to the order and it is at index 161. I need to add it to the cart. 
+Observation: OK
 Action: ADD 161,1
 Observation: Added 1 of item 161 to cart
+Action: THINK I'm done with the order. Time to checkout. 
+Observation: OK
 Action: CHECKOUT
 Observation: Order placed!
 Action: 

@@ -1,5 +1,7 @@
-Instruction: Order mini garlic cheese toast from Bowl Company
+Instruction: Order 3 mini garlic cheese toast from Bowl Company
 Observation: Search Bar
+Action: THINK I need to first pull up menu of Bowl Company
+Observation: OK
 Action: SEARCH BOWL COMPANY
 Observation: Search results for BOWL COMPANY
 id:0,name:The Bowl Company,,status:Open
@@ -18,6 +20,8 @@ id:12,name:Biryani Blues,,status:Open
 id:13,name:Thalis, Bowls & More,,status:Open
 id:14,name:Andhra Spicy Kadai,,status:Open
 id:15,name:Late Night,,status:Open
+Action: THINK I need to first pull up menu of The Bowl Company
+Observation: OK
 Action: CLICK 0
 Observation: Menu page for The Bowl Company,
 id:37,item:Mini Garlic Toast
@@ -35,8 +39,12 @@ id:48,item:Raw Pressery - Tender Coconut Water
 id:49,item:Sprite Can ( 330 ml )
 id:50,item:Thums Up Can ( 330 ml )
 id:51,item:Zero Coke Can ( 330 ml )
-Action: ADD 37,1
-Observation: Added 1 of item 37 to cart
+THINK You need to think step by step for each order. You also consider number of items per order. 
+Mini Garlic Toast is the closest thing to the order item 1 and it is at index 37. I need to add it to cart.
+Action: ADD 37,3
+Observation: Added 3 of item 37 to cart
+Action: THINK I'm done with the order. Time to checkout. 
+Observation: OK
 Action: CHECKOUT
 Observation: Order placed!
 Action: 

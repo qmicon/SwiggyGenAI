@@ -1,5 +1,7 @@
-Instruction: Order Peppy paneer and Match Day party special combo from Dominos.
+Instruction: Order Peppy paneer and a big party special combo from Dominos.
 Observation: Search Bar
+Action: THINK I need to first pull up menu of Dominos
+Observation: OK
 Action: SEARCH DOMINO'S
 Observation: Search results for DOMINO'S
 id:0,name:Domino's Pizza,,status:Open
@@ -18,6 +20,8 @@ id:12,name:Mozza,,status:Open
 id:13,name:LEBANESE N MORE,,status:Open
 id:14,name:Beef Feast,,status:Open
 id:15,name:Gambit's Pizza,,status:Open
+Action: THINK Domino's Pizza closely resembles my search term. It is at index 0. 
+Observation: OK
 Action: CLICK 0
 Observation: Menu page for Domino's Pizza,
 id:42,item:Peppy Chicken Nuggets
@@ -170,10 +174,15 @@ id:256,item:Match Day Special Combo @ Rs
 id:257,item:Match Day Special Combo @ Rs
 id:258,item:Match Day Special Combo @ Rs
 id:259,item:Match Day Special Party Combo @ Rs
+Action: THINK There are multiple orders and you need to think step by step. Peppy Paneer & Veg Paradise is the closest thing to the order item 1 and it is at index 235. 
+Match Day Special Combo is the closest thing to the order item 2 and it is at index 254.  I need to add these respective orders to the cart. 
+Observation: OK
 Action: ADD 235,1
 Observation: Added 1 of item 235 to cart
 Action: ADD 254,1
 Observation: Added 1 of item 254 to cart
+Action: THINK I'm done with the order. Time to checkout. 
+Observation: OK
 Action: CHECKOUT
 Observation: Order placed!
 Action: 

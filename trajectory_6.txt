@@ -1,5 +1,7 @@
 Instruction: Order aloo tikki burger and green apple mojito from Empire restaurant
 Observation: Search Bar
+Action: THINK I need to first pull up menu of Empire restaurant
+Observation: OK
 Action: SEARCH EMPIRE
 Observation: Search results for EMPIRE
 id:0,name:EASY BITES BY EMPIRE,,status:Open
@@ -18,6 +20,8 @@ id:12,name:Savoury Restaurant,,status:Open
 id:13,name:New kadai restaurant,,status:Open
 id:14,name:Scooby Cookhouse,,status:Open
 id:15,name:Five Star Chicken,,status:Open
+Action: THINK EASY BITES BY EMPIRE closely resembles my search term. It is at index 0. 
+Observation: OK
 Action: CLICK 0
 Observation: Menu page for EASY BITES BY EMPIRE,
 id:1,item:Aloo Tikki Masti Burger Combo
@@ -54,10 +58,14 @@ id:160,item:Eb Red Velvet Thick Shake
 id:161,item:Eb Strawberry Thick Shake
 id:162,item:Eb Watermelon Mojito
 id:176,item:Peri Peri Chicken Leg Piece
+Action: THINK There are multiple orders and you need to think step by step. Aloo Tikki Masti Burger Combo is the closest thing to the order item 1 and it is at index 1. 
+Green Apple Mojito is the closest thing to the order item 2 and it is at index 154.  I need to add these respective orders to the cart. 
 Action: ADD 1,1
 Observation: Added 1 of item 1 to cart
 Action: ADD 154,1
 Observation: Added 1 of item 154 to cart
+Action: THINK I'm done with the order. Time to checkout. 
+Observation: OK
 Action: CHECKOUT
 Observation: Order placed!
 Action: 

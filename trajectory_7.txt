@@ -1,5 +1,7 @@
-Instruction: Order the following from Burger king: Chicken Wings Fried, Chicken Wings Grilled, Pepsi, Cheezy Twins.
+Instruction: Order the following from Burger king: 2 Chicken Wings Grilled, 1 Chicken Wings Fried, 1 Pepsi, 1 Cheezy Twins.
 Observation: Search Bar
+Action: THINK I need to first pull up menu of Burger King
+Observation: OK
 Action: SEARCH BURGER KING
 Observation: Search results for BURGER KING
 id:0,name:Burger King,,status:Open
@@ -18,6 +20,8 @@ id:12,name:The Chicken House,,status:Open
 id:13,name:The Chicken King,,status:Open
 id:14,name:The Milky Ride,,status:Open
 id:15,name:THE EGG STORY,,status:Open
+Action: THINK Burger King closely resembles my search term. It is at index 0. 
+Observation: OK
 Action: CLICK 0
 Observation: Menu page for Burger King,
 id:7,item:1 Jr Veg Whopper +1 Chocolate Thick Shake
@@ -120,14 +124,22 @@ id:158,item:Chicken Wings - five Pcs Fried + Five Pcs Grilled
 id:159,item:Chicken Wings Fried - Ten Pieces
 id:160,item:Chicken Wings Fried - Fifteen Pieces
 id:161,item:Chicken Wings Grilled - Fifteen Pcs
-Action: ADD 161,1
-Observation: Added 1 of item 161 to cart
+Action: THINK There are multiple orders and you need to think step by step. You also consider number of items per order. 
+Chicken Wings Grilled is the closest thing to the order item 1 and it is at index 161. 
+Chicken Wings Fried is the closest thing to the order item 2 and it is at index 160.
+Pepsi is the closest thing to the order item 3 and it is at index 140.
+Cheezy Twins is the closest thing to the order item 4 and it is at index 85.
+I need to add these respective orders to the cart. 
+Action: ADD 161,2
+Observation: Added 2 of item 161 to cart
 Action: ADD 160,1
 Observation: Added 1 of item 160 to cart
 Action: ADD 140,1
 Observation: Added 1 of item 140 to cart
 Action: ADD 85,1
 Observation: Added 1 of item 85 to cart
+Action: THINK I'm done with the order. Time to checkout. 
+Observation: OK
 Action: CHECKOUT
 Observation: Order placed!
 Action: 

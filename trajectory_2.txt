@@ -1,6 +1,9 @@
-Instruction: Order veg pulao from Mcdonalds. 
-Action: SEARCH MCDONALDS
-Observation: Search results for MCDONALDS
+Instruction: Order veg pulao from Punjabi Panda.
+Observation: Search Bar 
+Action: THINK I need to first pull up menu of Punjabi Panda
+Observation: OK
+Action: SEARCH Punjabi Panda
+Observation: Search results for Punjabi Panda
 id:0,name:KFC,,status:Open
 id:1,name:Punjabi Panda,,status:Open
 id:2,name:Burger King,,status:Open
@@ -17,6 +20,8 @@ id:12,name:Just Fries,,status:Open
 id:13,name:Rang De Basanti Dhaba,,status:Open
 id:14,name:The Pizza Palace,,status:Open
 id:15,name:Azad Hind Hotel Ballygunge,,status:Open
+Action: THINK Punjabi Panda closely resembles my search term. It is at index 1. 
+Observation: OK
 Action: CLICK 1
 Observation: Menu page for Punjabi Panda,
 id:4,item:Paneer Tikka Butter Masala
@@ -200,8 +205,12 @@ id:233,item:Sweet Fresh Lime Water [300 Ml]
 id:237,item:Brownie Shake [300 Ml]
 id:238,item:Extra Ice Cream (1 Scoop)
 id:239,item:Extra Kitkat
+Action: THINK Veg Pulao is at index 110 and is the closest match to the order. I need to add it to the cart. 
+Observation: OK
 Action: ADD 110,1
 Observation: Added 1 of item 110 to cart
+Action: THINK I'm done with the order. Time to checkout. 
+Observation: OK
 Action: CHECKOUT
 Observation: Order placed!
 Action: 
