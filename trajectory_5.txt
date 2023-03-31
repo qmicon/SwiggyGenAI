@@ -1,0 +1,179 @@
+Instruction: Order Peppy paneer and Match Day party special combo from Dominos.
+Observation: Search Bar
+Action: SEARCH DOMINO'S
+Observation: Search results for DOMINO'S
+id:0,name:Domino's Pizza,,status:Open
+id:1,name:The Dugout,,status:Open
+id:2,name:Pizza Huts Shop,,status:Open
+id:3,name:The Park,,status:Open
+id:4,name:Sandwich Xpress,,status:Open
+id:5,name:Gusto Pizza,,status:Open
+id:6,name:Pizza Factory,,status:Open
+id:7,name:Ya Burger,,status:Open
+id:8,name:The Pizza Palace,,status:Open
+id:9,name:The Burger Factory by DON GIOVANNIS,,status:Open
+id:10,name:Don Giovanni's,,status:Open
+id:11,name:Gusto Cafe & Kitchen,,status:Open
+id:12,name:Mozza,,status:Open
+id:13,name:LEBANESE N MORE,,status:Open
+id:14,name:Beef Feast,,status:Open
+id:15,name:Gambit's Pizza,,status:Open
+Action: CLICK 0
+Observation: Menu page for Domino's Pizza,
+id:42,item:Peppy Chicken Nuggets
+id:43,item:Moroccan Spice Chicken Chunks
+id:44,item:Cheesy Meatballs
+id:45,item:Roasted Chicken Wings Classic Hot Sauce
+id:46,item:Chicken Meatballs Peri-Peri Seasoning
+id:47,item:Boneless Chicken Wings Peri-Peri
+id:48,item:Chicken Meatballs Peri-Peri Sauce
+id:49,item:Tomato Ketchup
+id:50,item:Paneer Tikka Stuffed Garlic Bread
+id:51,item:Chicken Pepperoni Stuffed Garlic Bread
+id:52,item:Garlic Breadsticks
+id:53,item:Cheesy Jalapeno Dip
+id:54,item:Cheesy Dip
+id:55,item:Choco Lava Cake
+id:56,item:Classic Stuffed Garlic Bread
+id:57,item:Taco Mexicana Veg
+id:58,item:Chicken Parcel
+id:59,item:Burger Pizza - Classic Veg
+id:60,item:Burger Pizza - Premium Veg
+id:61,item:Burger Pizza - Classic Non Veg
+id:62,item:Creamy Tomato Pasta Veg
+id:63,item:Tikka Masala Pasta Veg
+id:64,item:Moroccan Spice Pasta Veg
+id:65,item:Creamy Tomato Pasta Non Veg
+id:66,item:Tikka Masala Pasta Non Veg
+id:67,item:Moroccan Spice Pasta Non Veg
+id:68,item:Taco Mexicana Veg (Single)
+id:69,item:Basil Pesto Dip
+id:70,item:Harissa Dip
+id:71,item:Pepsi 475ml
+id:72,item:Mirinda 475ml
+id:73,item:Pepsi Black Can 300ml
+id:74,item:7Up 475ml
+id:75,item:Bailley One (500ml)
+id:76,item:Lipton Ice Tea ( 350 ml)
+id:77,item:B Natural Alphonsos from Ratnagiri (300 ml)
+id:78,item:B Natural Mixed Fruit from Himalayas (300 ml)
+id:79,item:Nagpur Orange
+id:80,item:Butterscotch Mousse Cake
+id:81,item:Red Velvet Lava Cake
+id:82,item:Brownie Fantasy
+id:96,item:Meal for 2: Veg Extravaganza & Peppy Paneer
+id:97,item:Meal for 2: Fresh Veggie & Peppy Paneer
+id:98,item:Meal for 2: Farmhouse & Corn n Cheese
+id:99,item:Meal for 2: Chicken Dominator & Chicken Golden Delight
+id:100,item:Meal for 2: Paneer Paratha & Corn Paratha Pizza
+id:101,item:Meal for 2: Moroccan Pasta Pizza & Corn and Cheese
+id:102,item:Meal for 4: Corn n Cheese & Farmhouse
+id:103,item:Meal for 4: Feast Veg Extravanga & Farmhouse
+id:104,item:Meal for 4: Peppy Paneer & Veg Paradise
+id:105,item:Meal for 4: Farmhouse & Veg Paradise
+id:106,item:Meal for 4: Pepper BBQ Chicken & Chicken Dominator
+id:107,item:Meal for 4: Pepper BBQ Chicken & Spiced Double Chicken
+id:108,item:Meal for 4: Pepper BBQ Chicken & Chicken Sausage
+id:109,item:Meal for 4: Veg Value Pizza
+id:110,item:Meal for 4: Non Veg Value Pizza
+id:111,item:Meal for 2: Moroccan Pasta Pizza & Achari Do Pyaza
+id:112,item:Meal for 2: Farmhouse & Veg Extravaganza
+id:113,item:Meal for 2: Veg Paradise & Farmhouse
+id:114,item:Meal for 2: Pepper BBQ Chicken & Spiced Double Chicken
+id:115,item:Meal for 2: Pepper BBQ Chicken & Chicken Dominator
+id:116,item:Meal for 4: Margherita & Peppy Paneer
+id:117,item:Meal for 4: Feast Veg Extravanga & Indo Tandoori Paneer
+id:118,item:Meal for 4: Veg Chessy Pizza
+id:119,item:Meal for 4: Veg Loaded Pizza
+id:120,item:Meal for 4: Veg Pizza Mania Loaded
+id:121,item:Meal for 4: Non Veg Pizza Mania Value
+id:122,item:Match Day Special Combo @ Rs
+id:123,item:Match Day Special Combo @ Rs
+id:124,item:Match Day Special Party Combo @ Rs
+id:125,item:Match Day Special Combo @ Rs
+id:126,item:Match Day Special Combo @ Rs
+id:127,item:Match Day Special Combo @ Rs
+id:128,item:Match Day Special Party Combo @ Rs
+id:171,item:Peppy Chicken Nuggets
+id:172,item:Moroccan Spice Chicken Chunks
+id:173,item:Cheesy Meatballs
+id:174,item:Roasted Chicken Wings Classic Hot Sauce
+id:175,item:Chicken Meatballs Peri-Peri Seasoning
+id:176,item:Boneless Chicken Wings Peri-Peri
+id:177,item:Chicken Meatballs Peri-Peri Sauce
+id:178,item:Tomato Ketchup
+id:179,item:Paneer Tikka Stuffed Garlic Bread
+id:180,item:Chicken Pepperoni Stuffed Garlic Bread
+id:181,item:Garlic Breadsticks
+id:182,item:Cheesy Jalapeno Dip
+id:183,item:Cheesy Dip
+id:184,item:Choco Lava Cake
+id:185,item:Classic Stuffed Garlic Bread
+id:186,item:Taco Mexicana Non Veg
+id:187,item:Taco Mexicana Veg
+id:188,item:Chicken Parcel
+id:189,item:Veg Parcel
+id:190,item:Burger Pizza - Classic Veg
+id:191,item:Burger Pizza - Premium Veg
+id:192,item:Burger Pizza - Classic Non Veg
+id:193,item:Creamy Tomato Pasta Veg
+id:194,item:Tikka Masala Pasta Veg
+id:195,item:Moroccan Spice Pasta Veg
+id:196,item:Creamy Tomato Pasta Non Veg
+id:197,item:Tikka Masala Pasta Non Veg
+id:198,item:Moroccan Spice Pasta Non Veg
+id:199,item:Taco Mexicana Veg (Single)
+id:200,item:Basil Pesto Dip
+id:201,item:Harissa Dip
+id:202,item:Pepsi 475ml
+id:203,item:Mirinda 475ml
+id:204,item:Pepsi Black Can 300ml
+id:205,item:7Up 475ml
+id:206,item:Bailley One (500ml)
+id:207,item:Lipton Ice Tea ( 350 ml)
+id:208,item:B Natural Alphonsos from Ratnagiri (300 ml)
+id:209,item:B Natural Mixed Fruit from Himalayas (300 ml)
+id:210,item:Nagpur Orange
+id:211,item:Butterscotch Mousse Cake
+id:212,item:Red Velvet Lava Cake
+id:213,item:Brownie Fantasy
+id:227,item:Meal for 2: Veg Extravaganza & Peppy Paneer
+id:228,item:Meal for 2: Fresh Veggie & Peppy Paneer
+id:229,item:Meal for 2: Farmhouse & Corn n Cheese
+id:230,item:Meal for 2: Chicken Dominator & Chicken Golden Delight
+id:231,item:Meal for 2: Paneer Paratha & Corn Paratha Pizza
+id:232,item:Meal for 2: Moroccan Pasta Pizza & Corn and Cheese
+id:233,item:Meal for 4: Corn n Cheese & Farmhouse
+id:234,item:Meal for 4: Feast Veg Extravanga & Farmhouse
+id:235,item:Meal for 4: Peppy Paneer & Veg Paradise
+id:236,item:Meal for 4: Farmhouse & Veg Paradise
+id:237,item:Meal for 4: Pepper BBQ Chicken & Chicken Dominator
+id:238,item:Meal for 4: Pepper BBQ Chicken & Spiced Double Chicken
+id:239,item:Meal for 4: Pepper BBQ Chicken & Chicken Sausage
+id:240,item:Meal for 4: Veg Value Pizza
+id:241,item:Meal for 4: Non Veg Value Pizza
+id:242,item:Meal for 2: Moroccan Pasta Pizza & Achari Do Pyaza
+id:243,item:Meal for 2: Farmhouse & Veg Extravaganza
+id:244,item:Meal for 2: Veg Paradise & Farmhouse
+id:245,item:Meal for 2: Pepper BBQ Chicken & Spiced Double Chicken
+id:246,item:Meal for 2: Pepper BBQ Chicken & Chicken Dominator
+id:247,item:Meal for 4: Margherita & Peppy Paneer
+id:248,item:Meal for 4: Feast Veg Extravanga & Indo Tandoori Paneer
+id:249,item:Meal for 4: Veg Chessy Pizza
+id:250,item:Meal for 4: Veg Loaded Pizza
+id:251,item:Meal for 4: Veg Pizza Mania Loaded
+id:252,item:Meal for 4: Non Veg Pizza Mania Value
+id:253,item:Match Day Special Combo @ Rs
+id:254,item:Match Day Special Combo @ Rs
+id:255,item:Match Day Special Party Combo @ Rs
+id:256,item:Match Day Special Combo @ Rs
+id:257,item:Match Day Special Combo @ Rs
+id:258,item:Match Day Special Combo @ Rs
+id:259,item:Match Day Special Party Combo @ Rs
+Action: ADD 235,1
+Observation: Added 1 of item 235 to cart
+Action: ADD 254,1
+Observation: Added 1 of item 254 to cart
+Action: CHECKOUT
+Observation: Order placed!
+Action: 

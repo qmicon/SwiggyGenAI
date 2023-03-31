@@ -1,0 +1,133 @@
+Instruction: Order the following from Burger king: Chicken Wings Fried, Chicken Wings Grilled, Pepsi, Cheezy Twins.
+Observation: Search Bar
+Action: SEARCH BURGER KING
+Observation: Search results for BURGER KING
+id:0,name:Burger King,,status:Open
+id:1,name:Ya Burger,,status:Open
+id:2,name:Burger Bites,,status:Open
+id:3,name:The Bahubelly,,status:Open
+id:4,name:Maggi Wala,,status:Open
+id:5,name:The Burger Factory by DON GIOVANNIS,,status:Open
+id:6,name:Burger In Law,,status:Open
+id:7,name:Sandwich Xpress,,status:Open
+id:8,name:The Pizza Palace,,status:Open
+id:9,name:Burger Express,,status:Open
+id:10,name:THE PARKING,,status:Open
+id:11,name:THE BIG BURGERS,,status:Open
+id:12,name:The Chicken House,,status:Open
+id:13,name:The Chicken King,,status:Open
+id:14,name:The Milky Ride,,status:Open
+id:15,name:THE EGG STORY,,status:Open
+Action: CLICK 0
+Observation: Menu page for Burger King,
+id:7,item:1 Jr Veg Whopper +1 Chocolate Thick Shake
+id:8,item:Cheezy Bite
+id:9,item:Fire Me Up
+id:10,item:1 Jr Chicken Whopper+1 Chocolate Thick Shake
+id:11,item:2 Crispy Veg Double Patty + 1King Fries + 1Veggie strips
+id:12,item:2 Crispy Chicken Double Patty + 1King Fries + 1 Chicken Fries
+id:14,item:King Fries
+id:15,item:Chocolate Thick Shake
+id:16,item:Choco Lava Cup
+id:17,item:Chicken Wings Fried - Four Pcs
+id:18,item:Boneless Wings Large
+id:19,item:Whopper Fridays- Veg Doubles
+id:20,item:Whopper Fridays- Mixed Doubles(Veg + Chicken)
+id:21,item:Whopper Fridays - Veg meal
+id:22,item:Whopper Fridays- Chicken Doubles
+id:23,item:Whopper Fridays - Chicken meal
+id:24,item:Whopper Fridays - Veg Shake meal
+id:25,item:Whopper Fridays - Chicken Shake meal
+id:26,item:Whopper Fridays- Feast for 2(Veg)
+id:27,item:Whopper Fridays- Feast for 2(Chicken)
+id:28,item:Whopper Fridays- Feast for 2(Veg+ Chicken)
+id:29,item:Paneer Royale Burger + Hot 'N' Cheezy Burger + 1 Med Fries
+id:30,item:2 Hot 'N' Cheezy Burger + 1 Med Fries
+id:31,item:2 Fiery Chicken Burger + 1 Med Fries
+id:32,item:2 Paneer Royale Burger + 1 Med Fries
+id:33,item:2 Chicken Tandoori Burger + 1 Med Fries
+id:64,item:2 Crispy Veg
+id:67,item:BK Veggie Burger + BK Veggie Burger
+id:70,item:BK Chicken Burger + BK Chicken Burger
+id:73,item:4 Crispy Veg + 2 Medium Fries
+id:74,item:6 Crispy Veg
+id:75,item:6 Crispy Chicken
+id:76,item:4 Crispy Chicken + 2 Medium Fries
+id:77,item:1 Crispy Chicken+1 Classic Cold Coffee
+id:78,item:1 Crispy Veg Double Patty+1 Classic Cold Coffee
+id:79,item:1 Jr Veg Whopper +1 Chocolate Thick Shake
+id:80,item:Cheezy Bite
+id:81,item:Fire Me Up
+id:82,item:2 Classic Cold Coffee @139 each
+id:83,item:1 Jr Chicken Whopper+1 Chocolate Thick Shake
+id:84,item:Fiery Twins
+id:85,item:Cheezy Twins
+id:86,item:2 Crispy Veg Double Patty + 1King Fries + 1Veggie strips
+id:87,item:2 Crispy Chicken Double Patty + 1King Fries + 1 Chicken Fries
+id:88,item:2 Crispy Chicken+1 King Fries+1 Cold Coffee+1 Medium Pepsi
+id:89,item:Crispy Veg + Med Fries + Chocolate Thick Shake
+id:90,item:Crispy Chicken + Med Fries + Chocolate Thick Shake
+id:91,item:BK Veggie + Med Fries + Chocolate Thick Shake
+id:92,item:BK Chicken + Med Fries + Chocolate Thick Shake
+id:93,item:Veg Whopper + Med Fries + Chocolate Thick Shake
+id:94,item:Chicken Whopper + Med Fries + Chocolate Thick Shake
+id:95,item:Paneer Royale + Med Fries + Chocolate Thick Shake
+id:96,item:Fiery Chicken + Med Fries + Chocolate Thick Shake
+id:97,item:Kungfu Brothers Combo- Veg
+id:98,item:Kungfu Brothers Combo- Chicken
+id:99,item:Toss Ka Boss Combo- Veg
+id:100,item:Toss Ka Boss Combo- Non Veg
+id:101,item:Whopper Partnership Combo- Veg
+id:102,item:Whopper Partnership Combo- Chicken
+id:103,item:Masala Chai
+id:104,item:Vanilla Blueberry Muffin
+id:105,item:Chocochip Muffin
+id:108,item:Hot Chocolate
+id:112,item:Berry Blast Thickshake
+id:113,item:Chocolate Thickshake
+id:114,item:Mango Thickshake
+id:115,item:Classic Cold Coffee
+id:120,item:BK Veggie Burger Combo
+id:121,item:BK Chicken Burger Combo
+id:131,item:Hashbrown
+id:132,item:Veggie Strips(5 Pcs)
+id:133,item:Chicken Fries - 5 Pcs
+id:134,item:Medium Fries
+id:135,item:King Fries
+id:136,item:Medium Peri Peri Fries
+id:137,item:Cheesy Fries
+id:138,item:Creamy Italian Fries
+id:139,item:King Peri Peri Fries
+id:140,item:Pepsi
+id:141,item:Mountain Dew Medium
+id:142,item:King Pepsi
+id:143,item:Berry Blast Thick Shake
+id:144,item:Chocolate Thick Shake
+id:145,item:Mango Thick Shake
+id:146,item:Choco Lava Cup
+id:147,item:Chocolate Mousse Cup
+id:148,item:Chocochip Muffin
+id:149,item:Vanilla Blueberry Muffin
+id:150,item:Chicken Wings Fried Two Pieces
+id:151,item:Chicken Wings Grilled - Two Pieces
+id:152,item:Boneless Wings Regular
+id:153,item:Chicken Wings Fried - Four Pcs
+id:154,item:Chicken Wings Grilled Four Pieces
+id:155,item:Chicken Wings Fried - Four pieces
+id:156,item:Boneless Wings Large
+id:157,item:Chicken Wings Grilled - Ten Pcs
+id:158,item:Chicken Wings - five Pcs Fried + Five Pcs Grilled
+id:159,item:Chicken Wings Fried - Ten Pieces
+id:160,item:Chicken Wings Fried - Fifteen Pieces
+id:161,item:Chicken Wings Grilled - Fifteen Pcs
+Action: ADD 161,1
+Observation: Added 1 of item 161 to cart
+Action: ADD 160,1
+Observation: Added 1 of item 160 to cart
+Action: ADD 140,1
+Observation: Added 1 of item 140 to cart
+Action: ADD 85,1
+Observation: Added 1 of item 85 to cart
+Action: CHECKOUT
+Observation: Order placed!
+Action: 

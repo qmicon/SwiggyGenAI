@@ -1,0 +1,42 @@
+Instruction: Order mini garlic cheese toast from Bowl Company
+Observation: Search Bar
+Action: SEARCH BOWL COMPANY
+Observation: Search results for BOWL COMPANY
+id:0,name:The Bowl Company,,status:Open
+id:1,name:The Good Bowl,,status:Open
+id:2,name:Big Bowl (Big Bowl Company),,status:Open
+id:3,name:The Indian Dhaba,,status:Open
+id:4,name:Punjabi Bowl,,status:Open
+id:5,name:The Biryani Life,,status:Open
+id:6,name:The Paratha House,,status:Open
+id:7,name:The Momo Co.,,status:Open
+id:8,name:The Icecream Zone,,status:Open
+id:9,name:The Bowl Magic,,status:Open
+id:10,name:The Dragon House,,status:Open
+id:11,name:Rolls & Bowls Company,,status:Open
+id:12,name:Biryani Blues,,status:Open
+id:13,name:Thalis, Bowls & More,,status:Open
+id:14,name:Andhra Spicy Kadai,,status:Open
+id:15,name:Late Night,,status:Open
+Action: CLICK 0
+Observation: Menu page for The Bowl Company,
+id:37,item:Mini Garlic Toast
+id:38,item:Classic Tiramisu Jar
+id:39,item:Rabdi Jamun and a Boondi Drizzle
+id:40,item:Gajar Ka Halwa
+id:41,item:Red Velvet Pastry Jar
+id:42,item:Gulab Jamun (1pc)
+id:43,item:Sleepy Owl Classic Cold Coffee
+id:44,item:Sunfeast Dark Fantasy Chocolate Shake
+id:45,item:Butter milk
+id:46,item:Coca-Cola Can ( 330 ml )
+id:47,item:Raw Pressery - Alphonso Mango Juice
+id:48,item:Raw Pressery - Tender Coconut Water
+id:49,item:Sprite Can ( 330 ml )
+id:50,item:Thums Up Can ( 330 ml )
+id:51,item:Zero Coke Can ( 330 ml )
+Action: ADD 37,1
+Observation: Added 1 of item 37 to cart
+Action: CHECKOUT
+Observation: Order placed!
+Action: 

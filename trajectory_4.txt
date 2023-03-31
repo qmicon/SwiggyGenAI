@@ -1,0 +1,92 @@
+Instruction: Order veg thali from a dhaba
+Observation: Search Bar
+Action: SEARCH DHABA
+Observation: Search results for DHABA
+id:0,name:Dhaba Junction,,status:Open
+id:1,name:Hotel Pan Asia Continental ,,status:Open
+id:2,name:Jai Hind Dhaba-Hazra,,status:Open
+id:3,name:Amritsari Dhaba,,status:Open
+id:4,name:The Dugout,,status:Open
+id:5,name:Sharma Dhaba,,status:Open
+id:6,name:Dilli Dhaba,,status:Open
+id:7,name:Punjabi Panda,,status:Open
+id:8,name:Apna Dhaba,,status:Open
+id:9,name:Azad Hind Dhaba,,status:Open
+id:10,name:Ballu Da Dhaba,,status:Open
+id:11,name:Yaara Da Dhaba,,status:Open
+id:12,name:Rang De Basanti Dhaba,,status:Open
+id:13,name:The Park,,status:Open
+id:14,name:Lords Dhaba,,status:Open
+id:15,name:Dhaba Junction,,status:Open
+Action: CLICK 0
+Observation: Menu page for Dhaba Junction,
+id:0,item:Veg Thali
+id:1,item:Chicken Thalis
+id:2,item:Egg Thali
+id:3,item:Fish Thali
+id:4,item:Mutton Thali
+id:5,item:Aloo Matar
+id:6,item:Palak Matar
+id:7,item:Mixed Vegetable
+id:8,item:Jeera Aloo Special
+id:9,item:Tawa Roti
+id:10,item:Tandoori Roti
+id:11,item:Tawa Butter Roti
+id:12,item:Tandoori Butter Roti
+id:13,item:Laccha Paratha
+id:14,item:Butter Naan
+id:15,item:Aloo Paratha
+id:16,item:Garlic Naan
+id:17,item:Paneer Naan
+id:18,item:Masala Kulcha
+id:19,item:Desi Ghee Veg Khichdi
+id:20,item:Basmati Rice [750 Ml]
+id:21,item:Jeera Rice [750 Ml]
+id:22,item:Green Peas Pulao [750 Ml]
+id:23,item:Veg Pulao [750 Ml]
+id:24,item:Kashmiri Pulao [750 Ml]
+id:25,item:Paneer Pulao [750 Ml]
+id:26,item:Veg Pulao With Egg [750 Ml]
+id:27,item:Bundi Raita
+id:28,item:Mixed Raita
+id:29,item:Special Lassi
+id:30,item:Veg Thali
+id:31,item:Chicken Thalis
+id:32,item:Egg Thali
+id:33,item:Fish Thali
+id:34,item:Mutton Thali
+id:52,item:Aloo Matar
+id:57,item:Palak Matar
+id:58,item:Mixed Vegetable
+id:59,item:Jeera Aloo Special
+id:77,item:Egg Omelette [2pcs]
+id:120,item:Tawa Roti
+id:121,item:Tandoori Roti
+id:122,item:Tawa Butter Roti
+id:123,item:Tandoori Butter Roti
+id:124,item:Plain Paratha
+id:125,item:Laccha Paratha
+id:126,item:Butter Naan
+id:127,item:Aloo Paratha
+id:128,item:Garlic Naan
+id:129,item:Paneer Naan
+id:130,item:Masala Kulcha
+id:131,item:Desi Ghee Veg Khichdi
+id:132,item:Basmati Rice [750 Ml]
+id:133,item:Jeera Rice [750 Ml]
+id:134,item:Green Peas Pulao [750 Ml]
+id:135,item:Veg Pulao [750 Ml]
+id:136,item:Kashmiri Pulao [750 Ml]
+id:137,item:Paneer Pulao [750 Ml]
+id:138,item:Veg Pulao With Egg [750 Ml]
+id:141,item:Roasted Papad
+id:142,item:Dahi
+id:143,item:Bundi Raita
+id:144,item:Mixed Raita
+id:145,item:Special Lassi
+id:146,item:Gulab Jamun - 2pcs
+Action: ADD 0,1
+Observation: Added 1 of item 0 to cart
+Action: CHECKOUT
+Observation: Order placed!
+Action: 

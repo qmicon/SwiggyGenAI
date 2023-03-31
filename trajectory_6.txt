@@ -1,0 +1,63 @@
+Instruction: Order aloo tikki burger and green apple mojito from Empire restaurant
+Observation: Search Bar
+Action: SEARCH EMPIRE
+Observation: Search results for EMPIRE
+id:0,name:EASY BITES BY EMPIRE,,status:Open
+id:1,name:Hotel Empire,,status:Open
+id:2,name:Easy Bites by Hotel Empire,,status:Open
+id:3,name:Leon's - Burgers & Wings (Leon Grill),,status:Open
+id:4,name:The Wing Story,,status:Open
+id:5,name:CHAI TEACHERS,,status:Open
+id:6,name:Knight Bite,,status:Open
+id:7,name:Raidan- Authentic Arabian Restaurant,,status:Open
+id:8,name:Burger Seigneur,,status:Open
+id:9,name:Imperial Restaurant,,status:Open
+id:10,name:California burger village,,status:Open
+id:11,name:Savoury Seashell Restaurant,,status:Open
+id:12,name:Savoury Restaurant,,status:Open
+id:13,name:New kadai restaurant,,status:Open
+id:14,name:Scooby Cookhouse,,status:Open
+id:15,name:Five Star Chicken,,status:Open
+Action: CLICK 0
+Observation: Menu page for EASY BITES BY EMPIRE,
+id:1,item:Aloo Tikki Masti Burger Combo
+id:11,item:Aloo Tikki Masti Burger Combo (for 2)
+id:15,item:Paneer Burger Combo (for 2)
+id:18,item:Veg Salad Combo (for 2)
+id:61,item:Honey Cake
+id:62,item:Eb Chocolate Mousse (60ml)
+id:63,item:Eb Chocolate Thick Shake
+id:64,item:Eb Green Apple Mojito
+id:65,item:Eb Lemon Fizz Cooler
+id:66,item:Eb Mango Thick Shake
+id:67,item:Eb Mojito Mint
+id:68,item:Eb Oreo Vanilla Thick Shake
+id:69,item:Eb Passion Fruit Mojito
+id:70,item:Eb Red Velvet Thick Shake
+id:71,item:Eb Strawberry Thick Shake
+id:72,item:Eb Watermelon Mojito
+id:86,item:Peri Peri Chicken Leg Piece
+id:91,item:Aloo Tikki Masti Burger Combo
+id:101,item:Aloo Tikki Masti Burger Combo (for 2)
+id:105,item:Paneer Burger Combo (for 2)
+id:108,item:Veg Salad Combo (for 2)
+id:151,item:Honey Cake
+id:152,item:Eb Chocolate Mousse (60ml)
+id:153,item:Eb Chocolate Thick Shake
+id:154,item:Eb Green Apple Mojito
+id:155,item:Eb Lemon Fizz Cooler
+id:156,item:Eb Mango Thick Shake
+id:157,item:Eb Mojito Mint
+id:158,item:Eb Oreo Vanilla Thick Shake
+id:159,item:Eb Passion Fruit Mojito
+id:160,item:Eb Red Velvet Thick Shake
+id:161,item:Eb Strawberry Thick Shake
+id:162,item:Eb Watermelon Mojito
+id:176,item:Peri Peri Chicken Leg Piece
+Action: ADD 1,1
+Observation: Added 1 of item 1 to cart
+Action: ADD 154,1
+Observation: Added 1 of item 154 to cart
+Action: CHECKOUT
+Observation: Order placed!
+Action: 

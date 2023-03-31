@@ -1,0 +1,270 @@
+Instruction: Order mirinda can from Mcdonalds or its closest alternative
+Observation: Search Bar
+Action: SEARCH MCDONALDS
+Observation: Search results for MCDONALDS
+id:0,name:KFC,,status:Open
+id:1,name:Fries Before Guys,,status:Open
+id:2,name:Burger King,,status:Open
+id:3,name:KFC,,status:Open
+id:4,name:SBFC Food Funda,,status:Open
+id:5,name:Biggies Burger,,status:Open
+id:6,name:Wbfc,,status:Open
+id:7,name:Kake D Hatti,,status:Open
+id:8,name:Fat Mamma's,,status:Open
+id:9,name:Burger In Law,,status:Open
+id:10,name:Go 69 Pizza,,status:Open
+id:11,name:Jai Hind Dhaba-Hazra,,status:Open
+id:12,name:Bachan's Dhaba,,status:Open
+id:13,name:Azad Hind Dhaba,,status:Open
+id:14,name:Arsalan,,status:Open
+id:15,name:Rang De Basanti Dhaba,,status:Open
+id:16,name:Cafe Coffee Day,,status:Open
+id:17,name:The Pizza Palace,,status:Open
+id:18,name:Paradise kitchen,,status:Open
+id:19,name:Anglo Bongs Caffe,,status:Open
+id:20,name:Santa Delivers,,status:Open
+id:21,name:Azad Hind Hotel Ballygunge,,status:Open
+id:22,name:GHARAR HASAL,,status:Open
+id:23,name:Honey Da Dhaba,,status:Open
+id:24,name:Pizza Huts Shop,,status:Open
+id:25,name:CLOUD SOCIAL ROOFTOP LOUNGE,,status:Open
+id:26,name:UDDTA PUNJAB by DON GIOVANNIS,,status:Open
+id:27,name:Cafe Sadda Haq,,status:Open
+id:28,name:Palki,,status:Open
+id:29,name:Uddta Punjab by Don Gio (Science City),,status:Open
+id:30,name:Banjara,,status:Open
+id:31,name:Beefy Affair,,status:Open
+id:32,name:Crazy Chaap Corner,,status:Open
+id:33,name:Apna Dhaba,,status:Open
+id:34,name:House Of Punjab,,status:Open
+id:35,name:Ballu Da Dhaba,,status:Open
+id:36,name:Starbucks Coffee,,status:Open
+id:37,name:Yaara Da Dhaba,,status:Open
+id:38,name:The Burger Factory by DON GIOVANNIS,,status:Open
+id:39,name:Cheeky Chicken,,status:Open
+id:40,name:Burger Express,,status:Open
+id:41,name:BK Cafe,,status:Open
+id:42,name:Hungergasm,,status:Open
+id:43,name:The Chicken King,,status:Open
+id:44,name:Bohot Cheesy,,status:Open
+id:45,name:BFC-BENGAL FRIED CHICKEN,,status:Open
+id:46,name:Food Court,,status:Open
+id:47,name:Punjabi Zaika,,status:Open
+id:48,name:Hot Wings,,status:Open
+id:49,name:Oven to plate,,status:Open
+id:50,name:AG's Burger,,status:Open
+id:51,name:KEBAB-E-BIRYANI,,status:Open
+id:52,name:GANESH HOTEL,,status:Open
+id:53,name:SANDWICH AUR WAFFLE CO,,status:Open
+id:54,name:GuptaJi's Veg Rasoi,,status:Open
+id:55,name:Hotel Rani,,status:Open
+id:56,name:Icy N Spicy,,status:Open
+id:57,name:Indiana Burgers,,status:Open
+id:58,name:Kitchen By The Pond,,status:Open
+id:59,name:Annapurna Hotel,,status:Open
+id:60,name:BAKED and FRIED HUB,,status:Open
+id:61,name:Hunger bites,,status:Open
+id:62,name:Joey's Pizza,,status:Open
+id:63,name:Steak lovers,,status:Open
+id:64,name:Wow chicken,,status:Open
+id:65,name:Craveopedia,,status:Open
+id:66,name:HUNGER TWISTER,,status:Open
+id:67,name:THE FRIED CHICKEN & MORE,,status:Open
+id:68,name:The Taste Of Cheese,,status:Open
+id:69,name:PPurple Turtle,,status:Open
+id:70,name:The Milky Ride,,status:Open
+id:71,name:AM 2 PM CAFE,,status:Open
+id:72,name:THE EGG STORY,,status:Open
+id:73,name:AM to PM Fast Food,,status:Open
+id:74,name:Yummy Express,,status:Open
+id:75,name:BABAI FOOD CENTRE,,status:Open
+id:76,name:Real Food's Factory,,status:Open
+id:77,name:Shaina Chicken Corner,,status:Open
+id:78,name:Joey's pizza place,,status:Open
+id:79,name:SAFE HOUSE,,status:Open
+id:80,name:Fried N Grill,,status:Open
+id:81,name:Neelam Restaurant,,status:Open
+id:82,name:Tyre Patty,,status:Open
+id:83,name:DOUBLE TROUBLE,,status:Open
+id:84,name:Wow! Chicken By Wow! Momo,,status:Open
+id:85,name:Bismillah Stores,,status:Open
+id:86,name:Hotel Pan Asia Continental ,,status:Open
+id:87,name:Aalishan Restaurant & Caterer,,status:Open
+id:88,name:TADKA,,status:Open
+id:89,name:Stacked Burgers,,status:Open
+id:90,name:The Biryani Inc.,,status:Open
+id:91,name:Khana Americana,,status:Open
+id:92,name:BANGALIR THALI,,status:Open
+id:93,name:The Chicken Xpress,,status:Open
+id:94,name:The Baker's House,,status:Open
+Action: CLICK 0
+Observation: Menu page for KFC,
+id:0,item:Family Feast 1,customizable: False,available:True
+id:1,item:Peri Peri 10 Pc Chicken Strips & 2 Dips,customizable: False,available:True
+id:2,item:Stay Home Bucket,customizable: False,available:True
+id:3,item:Mingles Bucket Meal,customizable: False,available:True
+id:4,item:Mega Feast,customizable: False,available:True
+id:5,item:6pc Hot & Crispy with Dynamite Sauce,customizable: False,available:True
+id:6,item:6pc Hot & Crispy with Nashville Sauce,customizable: False,available:True
+id:7,item:Smoky Red Grilled Chicken Biryani Combo,customizable: False,available:True
+id:8,item:Classic Biryani Combo,customizable: False,available:True
+id:9,item:Super Snacker Combo,customizable: False,available:True
+id:10,item:Chick’n Wings Combo,customizable: False,available:True
+id:11,item:Classic Zinger Meal,customizable: True,available:True
+id:12,item:Chick'n Strips Solo Combo,customizable: False,available:True
+id:13,item:Biryani Black Meal,customizable: False,available:True
+id:14,item:Solo Black Combo,customizable: False,available:True
+id:15,item:Peri Peri 10 Strips with Dynamite,customizable: False,available:True
+id:16,item:Peri Peri 10 Strips with Nashville,customizable: False,available:True
+id:17,item:Peri Peri 10 Leg Pc & 4 Dips,customizable: False,available:True
+id:18,item:Peri Peri 5 Leg Pc Meal,customizable: False,available:True
+id:19,item:Peri Peri 5 Leg Pc & 2 Dips,customizable: True,available:True
+id:20,item:Peri Peri 6pc Chicken Strips,customizable: True,available:True
+id:21,item:Big 8,customizable: True,available:True
+id:22,item:Ultimate Savings Bucket,customizable: True,available:True
+id:23,item:Big 12 Bucket,customizable: True,available:True
+id:24,item:Family Feast 2,customizable: False,available:True
+id:25,item:Hot & Crispy Chicken -8 pcs,customizable: True,available:True
+id:26,item:Hot & Crispy Chicken -6 pc,customizable: True,available:True
+id:27,item:Smoky Red Grilled Chicken -5pc,customizable: True,available:True
+id:28,item:Chicken Dipsums Meal,customizable: False,available:True
+id:29,item:Chicken Dipsums (6 Pcs,customizable: False,available:True
+id:30,item:Chicken Dipsums & Hot Wings Combo,customizable: False,available:True
+id:31,item:Classic Chicken Biryani Bucket -Large,customizable: True,available:True
+id:32,item:Popcorn Chicken Biryani Bucket -Large,customizable: True,available:True
+id:33,item:Smoky Red Grilled Chicken Biryani Bucket -Large,customizable: True,available:True
+id:34,item:Classic Chicken Biryani Bucket,customizable: True,available:True
+id:35,item:Popcorn Chicken Biryani Bucket,customizable: True,available:True
+id:36,item:Smoky Grilled Biryani Bucket,customizable: True,available:True
+id:37,item:Veg Biryani Bucket,customizable: True,available:True
+id:38,item:Buddy Meal,customizable: True,available:True
+id:39,item:Chicken & Krispers Combo,customizable: True,available:True
+id:40,item:Mixed Zinger Doubles,customizable: True,available:True
+id:41,item:Classic Zinger Meal,customizable: True,available:True
+id:42,item:Tandoori Zinger Burger,customizable: True,available:True
+id:43,item:Classic Zinger,customizable: True,available:True
+id:44,item:2 Chicken Krisper Burgers,customizable: False,available:True
+id:45,item:2 Veg Krisper Burgers,customizable: True,available:True
+id:46,item:2 Veg Krispers Meal,customizable: False,available:True
+id:47,item:Veg Zinger Burger,customizable: True,available:True
+id:48,item:Strips & Rice Combo,customizable: False,available:True
+id:49,item:Chick’n Wings Combo,customizable: False,available:True
+id:50,item:Peri Peri 3pc Chicken Strips,customizable: True,available:True
+id:51,item:Super Snacker Combo,customizable: False,available:True
+id:52,item:Chicken & Fries Bucket,customizable: False,available:True
+id:53,item:Solo Feast,customizable: False,available:True
+id:54,item:Hot & Crispy Chicken -4pc,customizable: True,available:True
+id:55,item:Chick'n Strips Solo Combo,customizable: False,available:True
+id:56,item:Popcorn & Fries bucket,customizable: True,available:True
+id:57,item:Biryani Rice,customizable: False,available:True
+id:58,item:Chicken Popcorn -Large,customizable: True,available:True
+id:59,item:Chicken Popcorn -Medium,customizable: True,available:True
+id:60,item:Chicken Popcorn -Regular,customizable: True,available:True
+id:61,item:2 pc Hot & Crispy Chicken,customizable: True,available:True
+id:62,item:Smoky Red Grilled Chicken -2 pcs,customizable: True,available:True
+id:63,item:Hot Chicken Wings -4pc,customizable: True,available:True
+id:64,item:Hot & Crispy Chicken -1pc,customizable: True,available:True
+id:65,item:1 pc Smoky Red Chicken,customizable: True,available:True
+id:66,item:2 pc Veg Patty,customizable: False,available:True
+id:67,item:Chocolate Lava Cake,customizable: False,available:True
+id:68,item:Coffee Mousse Cake,customizable: False,available:True
+id:69,item:Choco Mud Pie,customizable: False,available:True
+id:70,item:Tandoori Masala Dip,customizable: False,available:True
+id:71,item:Pack of 4 Dips,customizable: False,available:True
+id:72,item:Pack of 2 Dip,customizable: False,available:True
+id:73,item:French Fries -Large,customizable: False,available:True
+id:74,item:French Fries -Medium,customizable: False,available:True
+id:75,item:Pepsi PET 475ml,customizable: False,available:True
+id:76,item:Pepsi Can 330 ml,customizable: False,available:True
+id:77,item:7UP Can 330 ml,customizable: False,available:True
+id:78,item:Pepsi Black Can 330 ml,customizable: False,available:True
+id:79,item:Mirinda Can 330 ml,customizable: False,available:True
+id:80,item:Family Feast 1,customizable: False,available:True
+id:81,item:Peri Peri 5 Leg Pc & 2 Dips,customizable: False,available:True
+id:82,item:Peri Peri 10 Pc Chicken Strips & 2 Dips,customizable: False,available:True
+id:83,item:Peri Peri 10 Leg Pc & 4 Dips,customizable: False,available:True
+id:84,item:Stay Home Bucket,customizable: False,available:True
+id:85,item:Friendship Bucket with Dynamite Sauce,customizable: False,available:True
+id:86,item:Friendship Bucket with Nashville Sauce,customizable: False,available:True
+id:87,item:Mingles Bucket Meal,customizable: False,available:True
+id:88,item:Mega Feast,customizable: False,available:True
+id:89,item:6pc Hot & Crispy with Dynamite Sauce,customizable: False,available:True
+id:90,item:6pc Hot & Crispy with Nashville Sauce,customizable: False,available:True
+id:91,item:Smoky Red Grilled Chicken Biryani Combo,customizable: False,available:True
+id:92,item:Classic Biryani Combo,customizable: False,available:True
+id:93,item:Super Snacker Combo,customizable: False,available:True
+id:94,item:Chick’n Wings Combo,customizable: False,available:True
+id:95,item:Classic Zinger Meal,customizable: True,available:True
+id:96,item:Chick'n Strips Solo Combo,customizable: False,available:True
+id:97,item:Biryani Black Meal,customizable: False,available:True
+id:98,item:Solo Black Combo,customizable: False,available:True
+id:99,item:Peri Peri 10 Strips with Dynamite,customizable: False,available:True
+id:100,item:Peri Peri 10 Strips with Nashville,customizable: False,available:True
+id:101,item:Peri Peri 10 Leg Pc & 4 Dips,customizable: False,available:True
+id:102,item:Peri Peri 5 Leg Pc Meal,customizable: False,available:True
+id:103,item:Peri Peri 5 Leg Pc & 2 Dips,customizable: True,available:True
+id:104,item:Peri Peri 6pc Chicken Strips,customizable: True,available:True
+id:105,item:Big 8,customizable: True,available:True
+id:106,item:Ultimate Savings Bucket,customizable: True,available:True
+id:107,item:Big 12 Bucket,customizable: True,available:True
+id:108,item:Family Feast 2,customizable: False,available:True
+id:109,item:Hot & Crispy Chicken -8 pcs,customizable: True,available:True
+id:110,item:Hot & Crispy Chicken -6 pc,customizable: True,available:True
+id:111,item:Smoky Red Grilled Chicken -5pc,customizable: True,available:True
+id:112,item:Chicken Dipsums Meal,customizable: False,available:True
+id:113,item:Chicken Dipsums (6 Pcs,customizable: False,available:True
+id:114,item:Chicken Dipsums & Hot Wings Combo,customizable: False,available:True
+id:115,item:Classic Chicken Biryani Bucket -Large,customizable: True,available:True
+id:116,item:Popcorn Chicken Biryani Bucket -Large,customizable: True,available:True
+id:117,item:Smoky Red Grilled Chicken Biryani Bucket -Large,customizable: True,available:True
+id:118,item:Classic Chicken Biryani Bucket,customizable: True,available:True
+id:119,item:Popcorn Chicken Biryani Bucket,customizable: True,available:True
+id:120,item:Smoky Grilled Biryani Bucket,customizable: True,available:True
+id:121,item:Veg Biryani Bucket,customizable: True,available:True
+id:122,item:Buddy Meal,customizable: True,available:True
+id:123,item:Chicken & Krispers Combo,customizable: True,available:True
+id:124,item:Mixed Zinger Doubles,customizable: True,available:True
+id:125,item:Classic Zinger Meal,customizable: True,available:True
+id:126,item:Tandoori Zinger Burger,customizable: True,available:True
+id:127,item:Classic Zinger,customizable: True,available:True
+id:128,item:2 Chicken Krisper Burgers,customizable: False,available:True
+id:129,item:2 Veg Krisper Burgers,customizable: True,available:True
+id:130,item:2 Veg Krispers Meal,customizable: False,available:True
+id:131,item:Veg Zinger Burger,customizable: True,available:True
+id:132,item:Strips & Rice Combo,customizable: False,available:True
+id:133,item:Chick’n Wings Combo,customizable: False,available:True
+id:134,item:Peri Peri 3pc Chicken Strips,customizable: True,available:True
+id:135,item:Super Snacker Combo,customizable: False,available:True
+id:136,item:Chicken & Fries Bucket,customizable: False,available:True
+id:137,item:Solo Feast,customizable: False,available:True
+id:138,item:Hot & Crispy Chicken -4pc,customizable: True,available:True
+id:139,item:Chick'n Strips Solo Combo,customizable: False,available:True
+id:140,item:Popcorn & Fries bucket,customizable: True,available:True
+id:141,item:Biryani Rice,customizable: False,available:True
+id:142,item:Chicken Popcorn -Large,customizable: True,available:True
+id:143,item:Chicken Popcorn -Medium,customizable: True,available:True
+id:144,item:Chicken Popcorn -Regular,customizable: True,available:True
+id:145,item:2 pc Hot & Crispy Chicken,customizable: True,available:True
+id:146,item:Smoky Red Grilled Chicken -2 pcs,customizable: True,available:True
+id:147,item:Hot Chicken Wings -4pc,customizable: True,available:True
+id:148,item:Hot & Crispy Chicken -1pc,customizable: True,available:True
+id:149,item:1 pc Smoky Red Chicken,customizable: True,available:True
+id:150,item:2 pc Veg Patty,customizable: False,available:True
+id:151,item:Chocolate Lava Cake,customizable: False,available:True
+id:152,item:Coffee Mousse Cake,customizable: False,available:True
+id:153,item:Choco Mud Pie,customizable: False,available:True
+id:154,item:Tandoori Masala Dip,customizable: False,available:True
+id:155,item:Pack of 4 Dips,customizable: False,available:True
+id:156,item:Pack of 2 Dip,customizable: False,available:True
+id:157,item:French Fries -Large,customizable: False,available:True
+id:158,item:French Fries -Medium,customizable: False,available:True
+id:159,item:Pepsi PET 475ml,customizable: False,available:True
+id:160,item:Pepsi Can 330 ml,customizable: False,available:True
+id:161,item:7UP Can 330 ml,customizable: False,available:True
+id:162,item:Pepsi Black Can 330 ml,customizable: False,available:True
+id:163,item:Mirinda Can 330 ml,customizable: False,available:True
+Action: ADD 163,1
+Observation: Added 1 of item 163 to cart
+Action: CHECKOUT
+Observation: Order placed!
+Action: 
