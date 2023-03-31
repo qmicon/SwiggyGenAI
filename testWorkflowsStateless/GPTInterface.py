@@ -6,7 +6,6 @@ sys.path.append('..')
 from SwiggyCrawlerStateless import SwiggyCrawlerStateless
 
 crawler = SwiggyCrawlerStateless()
-time.sleep(10)
 # GPT reads the objective and searches Pizza
 # Action search["Pizza", "Restaurant"]
 search_suggest_elements = crawler.search_suggest("Pizza")
@@ -24,9 +23,9 @@ menu_elements = crawler.search_restaurant_by_index(search_elements, 2)
 print("Menu Items")
 output = crawler.render_menu_items(menu_elements)
 print(output)
-# GPT looks at the menu items and chooses to order two index 143
-# Action add[143, 2]
-crawler.add_menu_item_by_index_x_times(menu_elements, 143, 2)
+# GPT looks at the menu items and chooses to order three index 68
+# Action add[68, 3]
+crawler.add_menu_item_by_index_x_times(menu_elements, 68, 3)
 
 # Action checkout
 crawler.checkout()

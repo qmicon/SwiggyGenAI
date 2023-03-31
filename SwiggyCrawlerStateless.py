@@ -180,10 +180,13 @@ class SwiggyCrawlerStateless:
         return res_string
 
     def expand_all_menu_items(self):
-        self.page.wait_for_selector('button[aria-expanded="false"]')
-        buttons = self.page.query_selector_all('button[aria-expanded="false"]')
-        for button in buttons:
-            button.click()
+        try:
+            self.page.wait_for_selector('button[aria-expanded="false"]')
+            buttons = self.page.query_selector_all('button[aria-expanded="false"]')
+            for button in buttons:
+                button.click()
+        except:
+            return
 
     def add_menu_element(self, menu_div):
         add_button = menu_div.query_selector('div[class^="styles_itemAddButton"]')
