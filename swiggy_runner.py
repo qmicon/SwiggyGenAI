@@ -136,6 +136,117 @@ CURRENT URL: $url
 PREVIOUS COMMAND: $previous_command
 YOUR COMMAND:
 """
+def print_help():
+		return "WIP"
+
+def get_gpt_command(prompt):
+	response = openai.Completion.create(model="text-davinci-002", prompt=prompt, temperature=0.5, best_of=10, n=3, max_tokens=50)
+	return response.choices[0].text
+
+def step(state_stack, cmd, crawler=None):
+	if crawler:
+		_crawler = crawler
+	done = False
+	new_state = state_stack[-1]
+	observation = None
+	cmd = cmd.split("\n")[0]
+
+	if cmd.startswith("RESET"):
+		# Usage like RESET
+		_crawler.reset()
+		observation = "Search Bar"
+		state_stack = [] # empty the stack for states
+		new_state = (PageState.SEARCH_MAIN, None, observation)
+		state_stack.append(new_state)
+	
+	elif cmd.startswith("SEARCH"):
+		# usage like SEARCH string
+		str_search = cmd.strip().split("SEARCH")[1].strip()
+		category = "Restaurant"
+		try:
+			search_suggest_elements = _crawler.search_suggest(str_search)
+			search_elements = _crawler.search(search_suggest_elements, str_search, category)
+			observation = f"Search results for {str_search}" + _crawler.render_search_restaurants(search_elements)
+			new_state = (PageState.SEARCH_RESTAURANTS, search_elements, observation)
+			state_stack.append(new_state)
+		except:
+			search_elements = _crawler.search_directly("")
+			observation = f"Search results for {str_search}" + _crawler.render_search_restaurants(search_elements)
+			new_state = (PageState.SEARCH_RESTAURANTS, search_elements, observation)
+			state_stack.append(new_state)
+
+	elif cmd.startswith("BACK"):
+		# usage like BACK
+		# go to the previous page, this just means we will pop the stack and return it
+		new_state = state_stack.pop(-1) # is a tuple of (state_type, obs)
+		new_state = state_stack[-1]
+		observation = new_state[-1]
+
+	elif cmd.startswith("CLICK"):
+		# usage like CLICK 4
+		commasplit = cmd.split(",")
+		id = commasplit[0].split(" ")[1]
+		# see if this is valid action, click is only permitted in search pages
+		try:
+			id = int(id)
+			curr_state = state_stack[-1]
+			if curr_state[0] == PageState.SEARCH_RESTAURANTS:
+				# permitted
+				restaurant_elements = curr_state[1]
+				# chosen restaurant
+				retaurant_info = _crawler.parse_search_restaurant(restaurant_elements[id])
+				# menu for chosen restaurant
+				menu_elements = _crawler.search_restaurant_by_index(restaurant_elements, id)
+				observation = f"Menu page for {retaurant_info['Restaurant name'].strip()}" + _crawler.render_menu_items(menu_elements)
+				# create new state
+				new_state = (PageState.MENU_OPTIONS, menu_elements, observation)
+				state_stack.append(new_state)
+			else:
+				# action is not permitted
+				observation = f"Invalid action! We are not on the restaurant search page." #Current page is {prev_obs}
+				# no update to state
+		except Exception as e:
+			observation = f"Invalid action! id needs to be integer." # Current page is {prev_obs}
+	
+	elif cmd.startswith("ADD"):
+		# Usage like ADD 123,2
+		commasplit = cmd.strip().split()[1].split(',')
+		id, qty = commasplit
+		# see if this is valid action, click is only permitted in search pages
+		try:
+			id = int(id)
+			qty = int(qty)
+			curr_state = state_stack[-1]
+			if curr_state[0] == PageState.MENU_OPTIONS:
+				# permitted
+				menu_elements = curr_state[1]
+				_crawler.add_menu_item_by_index_x_times(menu_elements, id, qty)
+
+				observation = f"Added {qty} of item {id} to cart"
+			else:
+				# action is not permitted
+				observation = f"Invalid action! We are not on the restaurant menu page." # Current page is {prev_obs}
+				# no update to state
+		except Exception as e:
+			observation = f"Invalid action! Both id and qty needs to be integer." #  Current page is {prev_obs}
+
+	elif cmd.startswith("CHECKOUT"):
+		# Usage like CHECKOUT
+		_crawler.checkout()
+		observation = "Order placed!"
+		new_state = (PageState.CHECKOUT, None, observation)
+		state_stack.append(new_state)
+		done = True
+	elif cmd.startswith("THINK"):
+		# Usage like THINK If I want to do stuff, etc.. 
+		observation = "OK"
+		new_state = state_stack[-1]
+	else:
+		observation = "Invalid action!"
+		new_state = state_stack[-1]
+
+	time.sleep(1)
+	return new_state, observation, done, state_stack
 
 if (
 	__name__ == "__main__"
@@ -143,123 +254,12 @@ if (
 	_crawler = SwiggyCrawlerStateless()
 	openai.api_key = os.environ.get("OPENAI_API_KEY")
 
-	def print_help():
-		print(
-			"WIP",
-		)
-
-	def get_gpt_command(prompt):
-		response = openai.Completion.create(model="text-davinci-002", prompt=prompt, temperature=0.5, best_of=10, n=3, max_tokens=50)
-		return response.choices[0].text
-
-	def step(state_stack, cmd):
-		done = False
-		new_state = state_stack[-1]
-		observation = None
-		cmd = cmd.split("\n")[0]
-
-		if cmd.startswith("RESET"):
-			# Usage like RESET
-			_crawler.reset()
-			observation = "Search Bar"
-			state_stack = [] # empty the stack for states
-			new_state = (PageState.SEARCH_MAIN, None, observation)
-			state_stack.append(new_state)
-		
-		elif cmd.startswith("SEARCH"):
-			# usage like SEARCH string
-			str_search = cmd.strip().split("SEARCH")[1].strip()
-			category = "Restaurant"
-			try:
-				search_suggest_elements = _crawler.search_suggest(str_search)
-				search_elements = _crawler.search(search_suggest_elements, str_search, category)
-				observation = f"Search results for {str_search}" + _crawler.render_search_restaurants(search_elements)
-				new_state = (PageState.SEARCH_RESTAURANTS, search_elements, observation)
-				state_stack.append(new_state)
-			except:
-				search_elements = _crawler.search_directly(str_search)
-				observation = f"Search results for {str_search}" + _crawler.render_search_restaurants(search_elements)
-				new_state = (PageState.SEARCH_RESTAURANTS, search_elements, observation)
-				state_stack.append(new_state)
-
-		elif cmd.startswith("BACK"):
-			# usage like BACK
-			# go to the previous page, this just means we will pop the stack and return it
-			new_state = state_stack.pop(-1) # is a tuple of (state_type, obs)
-			new_state = state_stack[-1]
-			observation = new_state[-1]
-
-		elif cmd.startswith("CLICK"):
-			# usage like CLICK 4
-			commasplit = cmd.split(",")
-			id = commasplit[0].split(" ")[1]
-			# see if this is valid action, click is only permitted in search pages
-			try:
-				id = int(id)
-				curr_state = state_stack[-1]
-				if curr_state[0] == PageState.SEARCH_RESTAURANTS:
-					# permitted
-					restaurant_elements = curr_state[1]
-					# chosen restaurant
-					retaurant_info = _crawler.parse_search_restaurant(restaurant_elements[id])
-					# menu for chosen restaurant
-					menu_elements = _crawler.search_restaurant_by_index(restaurant_elements, id)
-					observation = f"Menu page for {retaurant_info['Restaurant name'].strip()}" + _crawler.render_menu_items(menu_elements)
-					# create new state
-					new_state = (PageState.MENU_OPTIONS, menu_elements, observation)
-					state_stack.append(new_state)
-				else:
-					# action is not permitted
-					observation = f"Invalid action! We are not on the restaurant search page." #Current page is {prev_obs}
-					# no update to state
-			except Exception as e:
-				observation = f"Invalid action! id needs to be integer." # Current page is {prev_obs}
-		
-		elif cmd.startswith("ADD"):
-			# Usage like ADD 123,2
-			commasplit = cmd.strip().split()[1].split(',')
-			id, qty = commasplit
-			# see if this is valid action, click is only permitted in search pages
-			try:
-				id = int(id)
-				qty = int(qty)
-				curr_state = state_stack[-1]
-				if curr_state[0] == PageState.MENU_OPTIONS:
-					# permitted
-					menu_elements = curr_state[1]
-					_crawler.add_menu_item_by_index_x_times(menu_elements, id, qty)
-
-					observation = f"Added {qty} of item {id} to cart"
-				else:
-					# action is not permitted
-					observation = f"Invalid action! We are not on the restaurant menu page." # Current page is {prev_obs}
-					# no update to state
-			except Exception as e:
-				observation = f"Invalid action! Both id and qty needs to be integer." #  Current page is {prev_obs}
-
-		elif cmd.startswith("CHECKOUT"):
-			# Usage like CHECKOUT
-			observation = "Order placed!"
-			new_state = (PageState.CHECKOUT, None, observation)
-			state_stack.append(new_state)
-			done = True
-		elif cmd.startswith("THINK"):
-			# Usage like THINK If I want to do stuff, etc.. 
-			observation = "OK"
-			new_state = state_stack[-1]
-		else:
-			observation = "Invalid action!"
-			new_state = state_stack[-1]
-
-		time.sleep(1)
-		return new_state, observation, done
-
 	objective = "Order margherita pizza from dominos"
 	print("\nWelcome to swiggy bot! What can I do for you today?")
 	i = input()
 	if len(i) > 0:
 		objective = i
-
+	
 	observation = 'Search Bar'
 	done = False
 	state_stack = [(PageState.SEARCH_MAIN, None, observation)]
