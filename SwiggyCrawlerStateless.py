@@ -14,6 +14,11 @@ class SwiggyCrawlerStateless:
         self.page.set_default_navigation_timeout(40000)
         self.page.set_default_timeout(40000)
         self.page.goto('https://www.swiggy.com/')
+
+        print(f"Please login on the browser and press enter once you do!")
+        command = input()
+
+        '''
         login_link = self.page.wait_for_selector('a:has-text("Login")')
         login_link.click()
         mobile_input = self.page.wait_for_selector('#mobile')
@@ -30,6 +35,11 @@ class SwiggyCrawlerStateless:
         form = self.page.wait_for_selector('form')
         verify_otp = form.wait_for_selector('a:has-text("VERIFY OTP")')
         verify_otp.click()
+        self.reset()
+        '''
+        self.reset()
+        
+    def reset(self):
         self.page.goto('https://www.swiggy.com/city/bangalore')
         self.page.goto('https://www.swiggy.com/search')
 
@@ -82,7 +92,7 @@ class SwiggyCrawlerStateless:
         return_string = ""
         for index, button in enumerate(search_suggest_elements):
             res_name, res_category  = self.parse_search_suggest(button)
-            return_string+= f"\nid: {index}, name: {res_name}, category: {res_category}\n"
+            return_string+= f"\nid: {index}, name: {res_name}, category: {res_category}"
         return return_string
 
     def parse_search_restaurant(self, search_div):
@@ -127,9 +137,9 @@ class SwiggyCrawlerStateless:
         res_string = ""
         for index, element in enumerate(search_elements):
             parsed_res = self.parse_search_restaurant(element)
-            status = parsed_res["Restaurant Status"]
-            name = parsed_res["Restaurant name"]
-            res_string+= f"\nid: {index}, name: {name} status: {status}\n"
+            status = parsed_res["Restaurant Status"].strip()
+            name = parsed_res["Restaurant name"].strip()
+            res_string+= f"\nid:{index},name:{name},status:{status}"
 
         return res_string
 
@@ -164,8 +174,8 @@ class SwiggyCrawlerStateless:
             text = self.parse_menu_element(element)
             IsCustomizable = 'Customisable' in text
             IsNotAvailable = 'Next available' in text
-            name = text.split(".")[1]
-            res_string+= f"\nid: {index}, name: {name}, customizable: {IsCustomizable}, available: {not IsNotAvailable}\n"
+            name = text.split(".")[1].strip()
+            res_string+= f"\nid:{index},item:{name},customizable: {IsCustomizable},available:{not IsNotAvailable}"
 
         return res_string
 
