@@ -170,11 +170,17 @@ if (
 			# usage like SEARCH string
 			str_search = cmd.strip().split("SEARCH")[1].strip()
 			category = "Restaurant"
-			search_suggest_elements = _crawler.search_suggest(str_search)
-			search_elements = _crawler.search(search_suggest_elements, str_search, category)
-			observation = f"Search results for {str_search}" + _crawler.render_search_restaurants(search_elements)
-			new_state = (PageState.SEARCH_RESTAURANTS, search_elements, observation)
-			state_stack.append(new_state)
+			try:
+				search_suggest_elements = _crawler.search_suggest(str_search)
+				search_elements = _crawler.search(search_suggest_elements, str_search, category)
+				observation = f"Search results for {str_search}" + _crawler.render_search_restaurants(search_elements)
+				new_state = (PageState.SEARCH_RESTAURANTS, search_elements, observation)
+				state_stack.append(new_state)
+			except:
+				search_elements = _crawler.search_directly(str_search)
+				observation = f"Search results for {str_search}" + _crawler.render_search_restaurants(search_elements)
+				new_state = (PageState.SEARCH_RESTAURANTS, search_elements, observation)
+				state_stack.append(new_state)
 
 		elif cmd.startswith("BACK"):
 			# usage like BACK

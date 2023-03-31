@@ -50,6 +50,14 @@ class SwiggyCrawlerStateless:
         search_suggest_elements = self.page.query_selector_all('button[data-testid="autosuggest-item"]')
         return search_suggest_elements
 
+    def search_directly(self, value):
+        input_value = self.page.wait_for_selector('input[placeholder="Search for restaurants and food"]')
+        input_value.type(value)
+        self.page.keyboard.press("Enter")
+        self.page.wait_for_selector('div[data-testid="search-pl-restaurant-card"]')
+        search_elements = self.page.query_selector_all('div[data-testid="search-pl-restaurant-card"]')
+        return search_elements
+
     def search(self, search_suggest_elements, value, category="Dish"):
         # Need to call search_suggest first
 
