@@ -1,133 +1,121 @@
 Instruction: Order big grilled chicken from burger king
 Observation: Search Bar
-Thought: I need to first find menu of Burger king 
+Thought: I need to first find menu of Burger king
 Action: SEARCH BURGER KING
-Observation: 
------Begin search results for BURGER KING------
-<0>,Burger King
-<1>,The Dugout
-<2>,Burger Bites
-<3>,The Bahubelly
-<4>,Ya Burger
-<5>,The Burger Factory by DON GIOVANNIS
-<6>,Burger In Law
-<7>,Maggi Wala
-<8>,The Pizza Palace
-<9>,Burger Express
-<10>,THE PARKING
-<11>,THE BIG BURGERS
-<12>,The Chicken House
-<13>,The Chicken King
-<14>,The Milky Ride
-<15>,THE EGG STORY
------End search results for BURGER KING------
-Thought: Burger King closely resembles my search term. It is at index 0. 
+Observation: Search results for BURGER KING
+<0>,Burger King,
+<1>,BOSS Burger,
+<2>,McDonald's,
+<3>,KFC,
+<4>,Leon's - Burgers & Wings (Leon Grill),
+<5>,The Burger Craft,
+<6>,Biggies Burger,
+<7>,Peppa Zzing,
+<8>,Burger Man,
+<9>,Indiana Burgers,
+<10>,Brown Burger Co.,
+<11>,Burger It Up,
+<12>,Food Adda,
+<13>,Burger to Rice Bowl Co. (BRB),
+<14>,Wat-a-Burger! - India ka Burger,
+<15>,Cafe Hideout,
+Thought: Burger King closely resembles my search term. It is at index 0.
 Action: CLICK 0
-Observation: 
------Begin menu page for Burger King--------
-<7>,1 Jr Veg Whopper +1 Chocolate Thick Shake
-<8>,Cheezy Bite
+Observation: Menu page for Burger King,
 <9>,Fire Me Up
-<10>,1 Jr Chicken Whopper+1 Chocolate Thick Shake
-<11>,2 Crispy Veg Double Patty + 1King Fries + 1Veggie strips
-<12>,2 Crispy Chicken Double Patty + 1King Fries + 1 Chicken Fries
-<14>,King Fries
-<15>,Chocolate Thick Shake
-<16>,Choco Lava Cup
-<17>,Chicken Wings Fried - Four Pcs
-<18>,Boneless Wings Large
-<19>,Whopper Fridays- Veg Doubles
-<20>,Whopper Fridays- Mixed Doubles(Veg + Chicken)
-<21>,Whopper Fridays - Veg meal
-<22>,Whopper Fridays- Chicken Doubles
-<23>,Whopper Fridays - Chicken meal
-<24>,Whopper Fridays - Veg Shake meal
-<25>,Whopper Fridays - Chicken Shake meal
-<26>,Whopper Fridays- Feast for 2(Veg)
-<27>,Whopper Fridays- Feast for 2(Chicken)
-<28>,Whopper Fridays- Feast for 2(Veg+ Chicken)
-<29>,Paneer Royale Burger + Hot 'N' Cheezy Burger + 1 Med Fries
-<30>,2 Hot 'N' Cheezy Burger + 1 Med Fries
-<31>,2 Fiery Chicken Burger + 1 Med Fries
-<32>,2 Paneer Royale Burger + 1 Med Fries
-<33>,2 Chicken Tandoori Burger + 1 Med Fries
-<64>,2 Crispy Veg
-<67>,BK Veggie Burger + BK Veggie Burger
-<70>,BK Chicken Burger + BK Chicken Burger
-<73>,4 Crispy Veg + 2 Medium Fries
-<74>,6 Crispy Veg
-<75>,6 Crispy Chicken
-<76>,4 Crispy Chicken + 2 Medium Fries
-<77>,1 Crispy Chicken+1 Classic Cold Coffee
+<10>,2 Crispy Veg Double Patty + 1King Fries + 1Veggie strips
+<11>,Cheezy Bite
+<12>,1 Jr Veg Whopper +1 Chocolate Thick Shake
+<13>,1 Jr Chicken Whopper+1 Chocolate Thick Shake
+<15>,Chicken Fries - 5 Pcs
+<16>,King Fries
+<17>,Chocolate Thick Shake
+<18>,Choco Lava Cup
+<19>,Chicken Wings Fried - Four Pcs
+<20>,Boneless Wings Large
+<21>,2 Chicken Tandoori Burger + 1 Med Fries
+<22>,2 Fiery Chicken Burger + 1 Med Fries
+<23>,Paneer Royale Burger + Hot 'N' Cheezy Burger + 1 Med Fries
+<24>,2 Hot 'N' Cheezy Burger + 1 Med Fries
+<25>,2 Paneer Royale Burger + 1 Med Fries
+<60>,2 Crispy Veg
+<65>,6 Crispy Chicken
+<66>,4 Crispy Chicken + 2 Medium Fries
+<67>,4 Crispy Veg + 2 Medium Fries
+<68>,6 Crispy Veg
+<69>,1 Crispy Chicken+1 Classic Cold Coffee
+<70>,Fire Me Up
+<71>,2 Crispy Veg Double Patty + 1King Fries + 1Veggie strips
+<72>,2 Classic Cold Coffee @139 each
+<73>,2 Crispy Chicken Double Patty + 1King Fries + 1 Chicken Fries
+<74>,Cheezy Bite
+<75>,Cheezy Twins
+<76>,Fiery Twins
+<77>,2 Crispy Chicken+1 King Fries+1 Cold Coffee+1 Medium Pepsi
 <78>,1 Crispy Veg Double Patty+1 Classic Cold Coffee
 <79>,1 Jr Veg Whopper +1 Chocolate Thick Shake
-<80>,Cheezy Bite
-<81>,Fire Me Up
-<82>,2 Classic Cold Coffee @139 each
-<83>,1 Jr Chicken Whopper+1 Chocolate Thick Shake
-<84>,Fiery Twins
-<85>,Cheezy Twins
-<86>,2 Crispy Veg Double Patty + 1King Fries + 1Veggie strips
-<87>,2 Crispy Chicken Double Patty + 1King Fries + 1 Chicken Fries
-<88>,2 Crispy Chicken+1 King Fries+1 Cold Coffee+1 Medium Pepsi
-<89>,Crispy Veg + Med Fries + Chocolate Thick Shake
-<90>,Crispy Chicken + Med Fries + Chocolate Thick Shake
-<91>,BK Veggie + Med Fries + Chocolate Thick Shake
-<92>,BK Chicken + Med Fries + Chocolate Thick Shake
-<93>,Veg Whopper + Med Fries + Chocolate Thick Shake
-<94>,Chicken Whopper + Med Fries + Chocolate Thick Shake
-<95>,Paneer Royale + Med Fries + Chocolate Thick Shake
-<96>,Fiery Chicken + Med Fries + Chocolate Thick Shake
-<97>,Kungfu Brothers Combo- Veg
-<98>,Kungfu Brothers Combo- Chicken
-<99>,Toss Ka Boss Combo- Veg
-<100>,Toss Ka Boss Combo- Non Veg
-<101>,Whopper Partnership Combo- Veg
-<102>,Whopper Partnership Combo- Chicken
-<103>,Masala Chai
-<104>,Vanilla Blueberry Muffin
-<105>,Chocochip Muffin
+<80>,1 Jr Chicken Whopper+1 Chocolate Thick Shake
+<81>,Crispy Veg + Med Fries + Chocolate Thick Shake
+<82>,Crispy Chicken + Med Fries + Chocolate Thick Shake
+<83>,BK Veggie + Med Fries + Chocolate Thick Shake
+<84>,BK Chicken + Med Fries + Chocolate Thick Shake
+<85>,Veg Whopper + Med Fries + Chocolate Thick Shake
+<86>,Chicken Whopper + Med Fries + Chocolate Thick Shake
+<87>,Paneer Royale + Med Fries + Chocolate Thick Shake
+<88>,Fiery Chicken + Med Fries + Chocolate Thick Shake
+<89>,Kungfu Brothers Combo- Veg
+<90>,Kungfu Brothers Combo- Chicken
+<91>,Whopper Partnership Combo- Veg
+<92>,Whopper Partnership Combo- Chicken
+<93>,Toss Ka Boss Combo- Veg
+<94>,Toss Ka Boss Combo- Non Veg
 <108>,Hot Chocolate
+<109>,Classic Cold Coffee
 <112>,Berry Blast Thickshake
 <113>,Chocolate Thickshake
 <114>,Mango Thickshake
-<115>,Classic Cold Coffee
-<120>,BK Veggie Burger Combo
-<121>,BK Chicken Burger Combo
-<131>,Hashbrown
-<132>,Veggie Strips(5 Pcs)
-<133>,Chicken Fries - 5 Pcs
-<134>,Medium Fries
-<135>,King Fries
-<136>,Medium Peri Peri Fries
-<137>,Cheesy Fries
-<138>,Creamy Italian Fries
-<139>,King Peri Peri Fries
-<140>,Pepsi
-<141>,Mountain Dew Medium
-<142>,King Pepsi
-<143>,Berry Blast Thick Shake
+<115>,Caramel Crunch Shake
+<116>,Choco Berry Shake
+<117>,Chocochip Muffin
+<118>,Vanilla Blueberry Muffin
+<119>,Masala Chai
+<133>,Hashbrown
+<134>,Veggie Strips(5 Pcs)
+<135>,Chicken Fries - 5 Pcs
+<136>,Medium Fries
+<137>,King Fries
+<138>,Medium Peri Peri Fries
+<139>,Cheesy Fries
+<140>,Creamy Italian Fries
+<141>,King Peri Peri Fries
+<142>,Pepsi
+<143>,King Pepsi
 <144>,Chocolate Thick Shake
 <145>,Mango Thick Shake
-<146>,Choco Lava Cup
-<147>,Chocolate Mousse Cup
-<148>,Chocochip Muffin
-<149>,Vanilla Blueberry Muffin
-<150>,Chicken Wings Fried Two Pieces
-<151>,Chicken Wings Grilled - Two Pieces
-<152>,Boneless Wings Regular
-<153>,Chicken Wings Fried - Four Pcs
-<154>,Chicken Wings Grilled Four Pieces
-<155>,Chicken Wings Fried - Four pieces
-<156>,Boneless Wings Large
-<157>,Chicken Wings Grilled - Ten Pcs
-<158>,Chicken Wings - five Pcs Fried + Five Pcs Grilled
-<159>,Chicken Wings Fried - Ten Pieces
-<160>,Chicken Wings Fried - Fifteen Pieces
-<161>,Chicken Wings Grilled - Fifteen Pcs
-Thought: Chicken Wings Grilled Fifteen Pcs is the closest thing to the order and it is at index 161. I need to add it to the cart. 
-Action: ADD 161,1
-Observation: Added 1 of item 161 to cart
-Thought: I'm done with the order. Time to checkout. 
+<146>,Berry Blast Thick Shake
+<147>,Pepsi Black Medium
+<148>,Mirinda Medium
+<149>,Lipton Ice Tea (Medium)
+<150>,7 Up Medium
+<151>,Choco Lava Cup
+<152>,Chocolate Mousse Cup
+<153>,Chocochip Muffin
+<154>,Vanilla Blueberry Muffin
+<155>,Chicken Wings Fried Two Pieces
+<156>,Chicken Wings Grilled - Two Pieces
+<157>,Boneless Wings Regular
+<158>,Chicken Wings Fried - Four Pcs
+<159>,Chicken Wings Grilled Four Pieces
+<160>,Chicken Wings Fried - Four pieces
+<161>,Boneless Wings Large
+<162>,Chicken Wings Grilled - Ten Pcs
+<163>,Chicken Wings - five Pcs Fried + Five Pcs Grilled
+<164>,Chicken Wings Fried - Ten Pieces
+<165>,Chicken Wings Fried - Fifteen Pieces
+<166>,Chicken Wings Grilled - Fifteen Pcs
+Thought: Chicken Wings Grilled Fifteen Pcs is the closest thing to the order and it is at index 166. I need to add it to the cart.
+Action: ADD 166,1
+Observation: Added 1 of item 166 to cart
+Thought: I'm done with the order. Time to checkout.
 Action: CHECKOUT
 Observation: Order placed!

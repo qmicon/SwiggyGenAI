@@ -102,7 +102,7 @@ class SwiggyCrawlerStateless:
         for index, button in enumerate(search_suggest_elements):   
                         
             res_name, res_category  = self.parse_search_suggest(button)
-            if res_category is not "Restaurant":
+            if res_category != "Restaurant":
                 continue
             counter+=1
             return_string+= f"\nid: {index}, name: {res_name}, category: {res_category}"
@@ -154,8 +154,10 @@ class SwiggyCrawlerStateless:
                 return res_string
             parsed_res = self.parse_search_restaurant(element)
             status = parsed_res["Restaurant Status"].strip()
+            if "Closed" in status:
+                continue
             name = parsed_res["Restaurant name"].strip()
-            res_string+= f"\nid:{index},name:{name},status:{status}"
+            res_string+= f"\n<{index}>,{name}"
             counter+=1
         return res_string
 
@@ -197,7 +199,7 @@ class SwiggyCrawlerStateless:
                 continue
 
             name = text.split(".")[1].strip()
-            res_string+= f"\nid:{index},item:{name}"
+            res_string+= f"\n<{index}>,{name}"
 
         return res_string
 

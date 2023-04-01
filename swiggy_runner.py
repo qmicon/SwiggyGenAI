@@ -170,7 +170,7 @@ if (
 		time.sleep(1)
 		return new_state, observation, done
 
-	objective = "Order margherita pizza from dominos"
+	objective = "Order big grilled chicken from burger king"
 	print("\nWelcome to swiggy bot! What can I do for you today?")
 	i = input()
 	if len(i) > 0:
@@ -182,7 +182,7 @@ if (
 	
 	# if klk is even, we think, if klk is odd, we act
 	klk = 0
-	running_context = f'Instruction: {objective}\nObservation: {observation}'
+	running_context = f'Instruction: {objective}\nObservation: {observation}' + "\nWhat should be the command?"
 
 	# go to the swiggy main page
 	_crawler.reset()
