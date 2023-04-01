@@ -32,29 +32,24 @@ prompt_template = f"""
 You are an agent for swiggy.com, a food ordering web app. You are given an instruction about the order you need to fulfill
 
 You can issue these commands:
-(1) RESET - for going back to the search bar page
-(2) SEARCH <restaurant_name> - to find restaurants with restaurant_name on swiggy's website
-(3) CLICK x - to open the menu of restaurant with id:x from search results
-(4) ADD x,y - to add y quantity of item with id:x from menu to the shopping cart
-(5) CHECKOUT - when you are done with adding items and want to place the order 
-(6) THINK - when you want to introspect about what you observe and what you need to do
+(1) SEARCH <restaurant_name> - to find restaurants with restaurant_name on swiggy's website
+(2) CLICK x - to open the menu of restaurant with id:x from search results
+(3) ADD x,y - to add y quantity of item with id:x from menu to the shopping cart
+(4) CHECKOUT - when you are done with adding items and want to place the order 
 
 You mainly see 3 kind of pages in the app:
 (1) Search Bar page - this is where you start your journey
-(2) Search Results page - this is where you see the restaurant search results after you search for a keyword or restaurant name
+(2) Search Results page - this is where you see the restaurant search results
 (3) Menu page - this is where you see the menu when you click on restaurant
 
-You can only write inside the Action field. Do not try to print out the observation for search or menu options. Don't try to interact with elements that you can't see.
+You can only Think and Act. Do not try to print out the observation for search or menu options. Don't try to interact with elements that you can't see.
 Here are some examples:
 ===========
 EXAMPLE 1:
 {open("trajectory_3.txt", "r").read()}
 ===========
-EXAMPLE 2:
-{open("trajectory_8.txt", "r").read()}
-===========
 REAL:
-Now understand the customer's instruction and act step by step. Make sure to THINK before you interact with the page. 
+Now understand the customer's instruction. Make sure to carefully observe and think before you act.
 """
 
 if (
@@ -71,7 +66,7 @@ if (
 	def get_gpt_command(template, context):
 		prompt = template + '\n' + context
 		response = openai.Completion.create(model="text-davinci-003", prompt=prompt, temperature=0.5, best_of=10, n=3, max_tokens=50)
-		return response.choices[0].text
+		return response.choices[0].text.strip().split('\n')[0]
 
 	def step(state_stack, cmd):
 		done = False
@@ -184,14 +179,21 @@ if (
 	observation = 'Search Bar'
 	done = False
 	state_stack = [(PageState.SEARCH_MAIN, None, observation)]
-
-	running_context = f'Instruction: {objective}\nObservation: {observation}\nAction: '
+	
+	# if klk is even, we think, if klk is odd, we act
+	klk = 0
+	running_context = f'Instruction: {objective}\nObservation: {observation}'
 
 	# go to the swiggy main page
 	_crawler.reset()
-	klk = 0
 	try:
 		while True:
+			
+			if klk % 2 == 0:
+				running_context += '\nThought: '
+			else:
+				running_context += '\nAction: '
+
 			print(f'\nIteration {klk}')
 			print(running_context)
 
@@ -204,16 +206,26 @@ if (
 			command = input()
 			command = command.strip()
 			if command == "":
-				_, observation, done = step(state_stack, gpt_cmd)
-				running_context += f"{gpt_cmd}\nObservation: {observation}\nAction: "
+				if klk % 2 != 0:
+					# now act
+					_, observation, done = step(state_stack, gpt_cmd)
+					running_context += f"{gpt_cmd}\nObservation: {observation}"
+				else:
+					# only think
+					running_context += f"{gpt_cmd}"
+
 			elif command == "help":
 				print_help()
 			elif command == "context":
 				print(f"{running_context}")
 			else:
-				_, observation, done = step(state_stack, command)
-				# append to running context
-				running_context += f"{command}\nObservation: {observation}\nAction: "
+				if klk % 2 != 0:
+					_, observation, done = step(state_stack, command)
+					# append to running context
+					running_context += f"{command}\nObservation: {observation}"
+				else:
+					# only think
+					running_context += f"{command}"
 				
 			if done:
 				print(f"Exiting ...")
@@ -222,6 +234,7 @@ if (
 					fp.write(running_context)
 				break
 			
+			klk += 1
 			# TODO: 
 			# running context needs to be saved after this for example
 

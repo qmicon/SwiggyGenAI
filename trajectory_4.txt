@@ -1,100 +1,99 @@
 Instruction: Order veg thali from a dhaba
 Observation: Search Bar
-Action: THINK I need to first pull up menu of a dhaba.
-Observation: OK
+Thought: I need to first pull up menu of a dhaba.
 Action: SEARCH DHABA
-Observation: Search results for DHABA
-id:0,name:Dhaba Junction,,status:Open
-id:1,name:Hotel Pan Asia Continental ,,status:Open
-id:2,name:Jai Hind Dhaba-Hazra,,status:Open
-id:3,name:Amritsari Dhaba,,status:Open
-id:4,name:The Dugout,,status:Open
-id:5,name:Sharma Dhaba,,status:Open
-id:6,name:Dilli Dhaba,,status:Open
-id:7,name:Punjabi Panda,,status:Open
-id:8,name:Apna Dhaba,,status:Open
-id:9,name:Azad Hind Dhaba,,status:Open
-id:10,name:Ballu Da Dhaba,,status:Open
-id:11,name:Yaara Da Dhaba,,status:Open
-id:12,name:Rang De Basanti Dhaba,,status:Open
-id:13,name:The Park,,status:Open
-id:14,name:Lords Dhaba,,status:Open
-id:15,name:Dhaba Junction,,status:Open
-Action: THINK Dhaba Junction closely resembles my search term. It is at index 0. 
-Observation: OK
+Observation: 
+-----Begin search results for DHABA-----
+<0>,Dhaba Junction
+<1>,Hotel Pan Asia Continental
+<2>,Jai Hind Dhaba-Hazra
+<3>,Amritsari Dhaba
+<4>,The Dugout
+<5>,Sharma Dhaba
+<6>,Dilli Dhaba
+<7>,Punjabi Panda
+<8>,Apna Dhaba
+<9>,Azad Hind Dhaba
+<10>,Ballu Da Dhaba
+<11>,Yaara Da Dhaba
+<12>,Rang De Basanti Dhaba
+<13>,The Park
+<14>,Lords Dhaba
+<15>,Dhaba Junction
+-----End search results for DHABA-----
+Thought: Dhaba Junction closely resembles my search term. It is at index 0. 
 Action: CLICK 0
-Observation: Menu page for Dhaba Junction,
-id:0,item:Veg Thali
-id:1,item:Chicken Thalis
-id:2,item:Egg Thali
-id:3,item:Fish Thali
-id:4,item:Mutton Thali
-id:5,item:Aloo Matar
-id:6,item:Palak Matar
-id:7,item:Mixed Vegetable
-id:8,item:Jeera Aloo Special
-id:9,item:Tawa Roti
-id:10,item:Tandoori Roti
-id:11,item:Tawa Butter Roti
-id:12,item:Tandoori Butter Roti
-id:13,item:Laccha Paratha
-id:14,item:Butter Naan
-id:15,item:Aloo Paratha
-id:16,item:Garlic Naan
-id:17,item:Paneer Naan
-id:18,item:Masala Kulcha
-id:19,item:Desi Ghee Veg Khichdi
-id:20,item:Basmati Rice [750 Ml]
-id:21,item:Jeera Rice [750 Ml]
-id:22,item:Green Peas Pulao [750 Ml]
-id:23,item:Veg Pulao [750 Ml]
-id:24,item:Kashmiri Pulao [750 Ml]
-id:25,item:Paneer Pulao [750 Ml]
-id:26,item:Veg Pulao With Egg [750 Ml]
-id:27,item:Bundi Raita
-id:28,item:Mixed Raita
-id:29,item:Special Lassi
-id:30,item:Veg Thali
-id:31,item:Chicken Thalis
-id:32,item:Egg Thali
-id:33,item:Fish Thali
-id:34,item:Mutton Thali
-id:52,item:Aloo Matar
-id:57,item:Palak Matar
-id:58,item:Mixed Vegetable
-id:59,item:Jeera Aloo Special
-id:77,item:Egg Omelette [2pcs]
-id:120,item:Tawa Roti
-id:121,item:Tandoori Roti
-id:122,item:Tawa Butter Roti
-id:123,item:Tandoori Butter Roti
-id:124,item:Plain Paratha
-id:125,item:Laccha Paratha
-id:126,item:Butter Naan
-id:127,item:Aloo Paratha
-id:128,item:Garlic Naan
-id:129,item:Paneer Naan
-id:130,item:Masala Kulcha
-id:131,item:Desi Ghee Veg Khichdi
-id:132,item:Basmati Rice [750 Ml]
-id:133,item:Jeera Rice [750 Ml]
-id:134,item:Green Peas Pulao [750 Ml]
-id:135,item:Veg Pulao [750 Ml]
-id:136,item:Kashmiri Pulao [750 Ml]
-id:137,item:Paneer Pulao [750 Ml]
-id:138,item:Veg Pulao With Egg [750 Ml]
-id:141,item:Roasted Papad
-id:142,item:Dahi
-id:143,item:Bundi Raita
-id:144,item:Mixed Raita
-id:145,item:Special Lassi
-id:146,item:Gulab Jamun - 2pcs
-Action: THINK Veg Thali is the closest thing to the order and it is at index 0. I need to add it to the cart. 
-Observation: OK
+Observation: 
+----Begin menu page for Dhaba Junction-----
+<0>,item:Veg Thali
+<1>,item:Chicken Thalis
+<2>,item:Egg Thali
+<3>,item:Fish Thali
+<4>,item:Mutton Thali
+<5>,item:Aloo Matar
+<6>,item:Palak Matar
+<7>,item:Mixed Vegetable
+<8>,item:Jeera Aloo Special
+<9>,item:Tawa Roti
+<10>,item:Tandoori Roti
+<11>,item:Tawa Butter Roti
+<12>,item:Tandoori Butter Roti
+<13>,item:Laccha Paratha
+<14>,item:Butter Naan
+<15>,item:Aloo Paratha
+<16>,item:Garlic Naan
+<17>,item:Paneer Naan
+<18>,item:Masala Kulcha
+<19>,item:Desi Ghee Veg Khichdi
+<20>,item:Basmati Rice [750 Ml]
+<21>,item:Jeera Rice [750 Ml]
+<22>,item:Green Peas Pulao [750 Ml]
+<23>,item:Veg Pulao [750 Ml]
+<24>,item:Kashmiri Pulao [750 Ml]
+<25>,item:Paneer Pulao [750 Ml]
+<26>,item:Veg Pulao With Egg [750 Ml]
+<27>,item:Bundi Raita
+<28>,item:Mixed Raita
+<29>,item:Special Lassi
+<30>,item:Veg Thali
+<31>,item:Chicken Thalis
+<32>,item:Egg Thali
+<33>,item:Fish Thali
+<34>,item:Mutton Thali
+<52>,item:Aloo Matar
+<57>,item:Palak Matar
+<58>,item:Mixed Vegetable
+<59>,item:Jeera Aloo Special
+<77>,item:Egg Omelette [2pcs]
+<120>,item:Tawa Roti
+<121>,item:Tandoori Roti
+<122>,item:Tawa Butter Roti
+<123>,item:Tandoori Butter Roti
+<124>,item:Plain Paratha
+<125>,item:Laccha Paratha
+<126>,item:Butter Naan
+<127>,item:Aloo Paratha
+<128>,item:Garlic Naan
+<129>,item:Paneer Naan
+<130>,item:Masala Kulcha
+<131>,item:Desi Ghee Veg Khichdi
+<132>,item:Basmati Rice [750 Ml]
+<133>,item:Jeera Rice [750 Ml]
+<134>,item:Green Peas Pulao [750 Ml]
+<135>,item:Veg Pulao [750 Ml]
+<136>,item:Kashmiri Pulao [750 Ml]
+<137>,item:Paneer Pulao [750 Ml]
+<138>,item:Veg Pulao With Egg [750 Ml]
+<141>,item:Roasted Papad
+<142>,item:Dahi
+<143>,item:Bundi Raita
+<144>,item:Mixed Raita
+<145>,item:Special Lassi
+<146>,item:Gulab Jamun - 2pcs
+----End menu page for Dhaba Junction-----
+Thought: Veg Thali is the closest thing to the order and it is at index 0. I need to add it to the cart. 
 Action: ADD 0,1
 Observation: Added 1 of item 0 to cart
-Action: THINK I'm done with the order. Time to checkout. 
-Observation: OK
+Thought: I'm done with the order. Time to checkout. 
 Action: CHECKOUT
 Observation: Order placed!
-Action: 
