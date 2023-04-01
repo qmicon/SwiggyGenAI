@@ -25,71 +25,71 @@ Thought: Dhaba Junction closely resembles my search term. It is at index 0.
 Action: CLICK 0
 Observation: 
 ----Begin menu page for Dhaba Junction-----
-<0>,item:Veg Thali
-<1>,item:Chicken Thalis
-<2>,item:Egg Thali
-<3>,item:Fish Thali
-<4>,item:Mutton Thali
-<5>,item:Aloo Matar
-<6>,item:Palak Matar
-<7>,item:Mixed Vegetable
-<8>,item:Jeera Aloo Special
-<9>,item:Tawa Roti
-<10>,item:Tandoori Roti
-<11>,item:Tawa Butter Roti
-<12>,item:Tandoori Butter Roti
-<13>,item:Laccha Paratha
-<14>,item:Butter Naan
-<15>,item:Aloo Paratha
-<16>,item:Garlic Naan
-<17>,item:Paneer Naan
-<18>,item:Masala Kulcha
-<19>,item:Desi Ghee Veg Khichdi
-<20>,item:Basmati Rice [750 Ml]
-<21>,item:Jeera Rice [750 Ml]
-<22>,item:Green Peas Pulao [750 Ml]
-<23>,item:Veg Pulao [750 Ml]
-<24>,item:Kashmiri Pulao [750 Ml]
-<25>,item:Paneer Pulao [750 Ml]
-<26>,item:Veg Pulao With Egg [750 Ml]
-<27>,item:Bundi Raita
-<28>,item:Mixed Raita
-<29>,item:Special Lassi
-<30>,item:Veg Thali
-<31>,item:Chicken Thalis
-<32>,item:Egg Thali
-<33>,item:Fish Thali
-<34>,item:Mutton Thali
-<52>,item:Aloo Matar
-<57>,item:Palak Matar
-<58>,item:Mixed Vegetable
-<59>,item:Jeera Aloo Special
-<77>,item:Egg Omelette [2pcs]
-<120>,item:Tawa Roti
-<121>,item:Tandoori Roti
-<122>,item:Tawa Butter Roti
-<123>,item:Tandoori Butter Roti
-<124>,item:Plain Paratha
-<125>,item:Laccha Paratha
-<126>,item:Butter Naan
-<127>,item:Aloo Paratha
-<128>,item:Garlic Naan
-<129>,item:Paneer Naan
-<130>,item:Masala Kulcha
-<131>,item:Desi Ghee Veg Khichdi
-<132>,item:Basmati Rice [750 Ml]
-<133>,item:Jeera Rice [750 Ml]
-<134>,item:Green Peas Pulao [750 Ml]
-<135>,item:Veg Pulao [750 Ml]
-<136>,item:Kashmiri Pulao [750 Ml]
-<137>,item:Paneer Pulao [750 Ml]
-<138>,item:Veg Pulao With Egg [750 Ml]
-<141>,item:Roasted Papad
-<142>,item:Dahi
-<143>,item:Bundi Raita
-<144>,item:Mixed Raita
-<145>,item:Special Lassi
-<146>,item:Gulab Jamun - 2pcs
+<0>,Veg Thali
+<1>,Chicken Thalis
+<2>,Egg Thali
+<3>,Fish Thali
+<4>,Mutton Thali
+<5>,Aloo Matar
+<6>,Palak Matar
+<7>,Mixed Vegetable
+<8>,Jeera Aloo Special
+<9>,Tawa Roti
+<10>,Tandoori Roti
+<11>,Tawa Butter Roti
+<12>,Tandoori Butter Roti
+<13>,Laccha Paratha
+<14>,Butter Naan
+<15>,Aloo Paratha
+<16>,Garlic Naan
+<17>,Paneer Naan
+<18>,Masala Kulcha
+<19>,Desi Ghee Veg Khichdi
+<20>,Basmati Rice [750 Ml]
+<21>,Jeera Rice [750 Ml]
+<22>,Green Peas Pulao [750 Ml]
+<23>,Veg Pulao [750 Ml]
+<24>,Kashmiri Pulao [750 Ml]
+<25>,Paneer Pulao [750 Ml]
+<26>,Veg Pulao With Egg [750 Ml]
+<27>,Bundi Raita
+<28>,Mixed Raita
+<29>,Special Lassi
+<30>,Veg Thali
+<31>,Chicken Thalis
+<32>,Egg Thali
+<33>,Fish Thali
+<34>,Mutton Thali
+<52>,Aloo Matar
+<57>,Palak Matar
+<58>,Mixed Vegetable
+<59>,Jeera Aloo Special
+<77>,Egg Omelette [2pcs]
+<120>,Tawa Roti
+<121>,Tandoori Roti
+<122>,Tawa Butter Roti
+<123>,Tandoori Butter Roti
+<124>,Plain Paratha
+<125>,Laccha Paratha
+<126>,Butter Naan
+<127>,Aloo Paratha
+<128>,Garlic Naan
+<129>,Paneer Naan
+<130>,Masala Kulcha
+<131>,Desi Ghee Veg Khichdi
+<132>,Basmati Rice [750 Ml]
+<133>,Jeera Rice [750 Ml]
+<134>,Green Peas Pulao [750 Ml]
+<135>,Veg Pulao [750 Ml]
+<136>,Kashmiri Pulao [750 Ml]
+<137>,Paneer Pulao [750 Ml]
+<138>,Veg Pulao With Egg [750 Ml]
+<141>,Roasted Papad
+<142>,Dahi
+<143>,Bundi Raita
+<144>,Mixed Raita
+<145>,Special Lassi
+<146>,Gulab Jamun - 2pcs
 ----End menu page for Dhaba Junction-----
 Thought: Veg Thali is the closest thing to the order and it is at index 0. I need to add it to the cart. 
 Action: ADD 0,1
