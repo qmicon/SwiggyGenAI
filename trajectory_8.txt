@@ -1,0 +1,49 @@
+Instruction: Order 3 mini garlic cheese toast from Bowl Company
+Observation: Search Bar
+Thought: I need to first pull up menu of Bowl Company
+Action: SEARCH BOWL COMPANY
+Observation: 
+----Begin search results for BOWL COMPANY------
+<0>,The Bowl Company
+<1>,The Good Bowl
+<2>,Big Bowl (Big Bowl Company)
+<3>,The Indian Dhaba
+<4>,Punjabi Bowl
+<5>,The Biryani Life
+<6>,The Paratha House
+<7>,The Momo Co.
+<8>,The Icecream Zone
+<9>,The Bowl Magic
+<10>,The Dragon House
+<11>,Rolls & Bowls Company
+<12>,Biryani Blues
+<13>,Thalis, Bowls & More
+<14>,Andhra Spicy Kadai
+<15>,Late Night
+----End search results for BOWL COMPANY------
+Thought: Bowl Company is listed at id:0. I need to click it.
+Action: CLICK 0
+Observation: 
+-----Begin menu page for The Bowl Company-----
+<37>,Mini Garlic Toast
+<38>,Classic Tiramisu Jar
+<39>,Rabdi Jamun and a Boondi Drizzle
+<40>,Gajar Ka Halwa
+<41>,Red Velvet Pastry Jar
+<42>,Gulab Jamun (1pc)
+<43>,Sleepy Owl Classic Cold Coffee
+<44>,Sunfeast Dark Fantasy Chocolate Shake
+<45>,Butter milk
+<46>,Coca-Cola Can ( 330 ml )
+<47>,Raw Pressery - Alphonso Mango Juice
+<48>,Raw Pressery - Tender Coconut Water
+<49>,Sprite Can ( 330 ml )
+<50>,Thums Up Can ( 330 ml )
+<51>,Zero Coke Can ( 330 ml )
+-----End menu page for The Bowl Company-----
+Thought: Mini Garlic Toast is the closest thing to the order item and it is at index 37. I need to add 3 of it to cart.
+Action: ADD 37,3
+Observation: Added 3 of item 37 to cart
+Thought: I'm done with the order. Time to checkout. 
+Action: CHECKOUT
+Observation: Order placed!

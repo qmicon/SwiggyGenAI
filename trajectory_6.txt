@@ -1,0 +1,71 @@
+Instruction: Order aloo tikki burger and green apple mojito from Empire restaurant
+Observation: Search Bar
+Thought: I need to first pull up menu of Empire restaurant
+Action: SEARCH EMPIRE
+Observation: 
+-------Begin search results for EMPIRE-------
+<0>,EASY BITES BY EMPIRE
+<1>,Hotel Empire
+<2>,Easy Bites by Hotel Empire
+<3>,Leon's - Burgers & Wings (Leon Grill)
+<4>,The Wing Story
+<5>,CHAI TEACHERS
+<6>,Knight Bite
+<7>,Raidan- Authentic Arabian Restaurant
+<8>,Burger Seigneur
+<9>,Imperial Restaurant
+<10>,California burger village
+<11>,Savoury Seashell Restaurant
+<12>,Savoury Restaurant
+<13>,New kadai restaurant
+<14>,Scooby Cookhouse
+<15>,Five Star Chicken
+-------End search results for EMPIRE-------
+Thought: EASY BITES BY EMPIRE closely resembles my search term. It is at index 0. 
+Action: CLICK 0
+Observation: 
+-------Begin menu page for EASY BITES BY EMPIRE-------
+<1>,Aloo Tikki Masti Burger Combo
+<11>,Aloo Tikki Masti Burger Combo (for 2)
+<15>,Paneer Burger Combo (for 2)
+<18>,Veg Salad Combo (for 2)
+<61>,Honey Cake
+<62>,Eb Chocolate Mousse (60ml)
+<63>,Eb Chocolate Thick Shake
+<64>,Eb Green Apple Mojito
+<65>,Eb Lemon Fizz Cooler
+<66>,Eb Mango Thick Shake
+<67>,Eb Mojito Mint
+<68>,Eb Oreo Vanilla Thick Shake
+<69>,Eb Passion Fruit Mojito
+<70>,Eb Red Velvet Thick Shake
+<71>,Eb Strawberry Thick Shake
+<72>,Eb Watermelon Mojito
+<86>,Peri Peri Chicken Leg Piece
+<91>,Aloo Tikki Masti Burger Combo
+<101>,Aloo Tikki Masti Burger Combo (for 2)
+<105>,Paneer Burger Combo (for 2)
+<108>,Veg Salad Combo (for 2)
+<151>,Honey Cake
+<152>,Eb Chocolate Mousse (60ml)
+<153>,Eb Chocolate Thick Shake
+<154>,Eb Green Apple Mojito
+<155>,Eb Lemon Fizz Cooler
+<156>,Eb Mango Thick Shake
+<157>,Eb Mojito Mint
+<158>,Eb Oreo Vanilla Thick Shake
+<159>,Eb Passion Fruit Mojito
+<160>,Eb Red Velvet Thick Shake
+<161>,Eb Strawberry Thick Shake
+<162>,Eb Watermelon Mojito
+<176>,Peri Peri Chicken Leg Piece
+-------Begin menu page for EASY BITES BY EMPIRE-------
+Thought: There are multiple orders and I need to think step by step. Aloo Tikki Masti Burger Combo is the closest thing to the order item 1 and it is at index 1. 
+Action: ADD 1,1
+Observation: Added 1 of item 1 to cart
+Thought: Next, Green Apple Mojito is the closest thing to the order item 2 and it is at index 154.  
+Action: ADD 154,1
+Observation: Added 1 of item 154 to cart
+Thought: I'm done with the order. Time to checkout. 
+Action: CHECKOUT
+Observation: Order placed!

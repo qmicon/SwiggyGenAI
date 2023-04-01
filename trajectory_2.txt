@@ -1,0 +1,215 @@
+Instruction: Order veg pulao from Punjabi Panda.
+Observation: Search Bar 
+Thought: I need to first pull up menu of Punjabi Panda
+Action: SEARCH Punjabi Panda
+Observation: 
+------Begin search results for Punjabi Panda------
+<0>,KFC
+<1>,Punjabi Panda
+<2>,Burger King
+<3>,KFC
+<4>,Belgian Waffle Junction
+<5>,Biggies Burger
+<6>,Wbfc
+<7>,Roy Dhaba - North Indian | Tandoor | Chinese
+<8>,Fat Mamma's
+<9>,Burger In Law
+<10>,Jai Hind Dhaba-Hazra
+<11>,Arsalan
+<12>,Just Fries
+<13>,Rang De Basanti Dhaba
+<14>,The Pizza Palace
+<15>,Azad Hind Hotel Ballygunge
+------End search results for Punjabi Panda------
+Thought: Punjabi Panda closely resembles my search term. It is at index 1. 
+Action: CLICK 1
+Observation: 
+------Begin menu page for Punjabi Panda---------
+<4>,Paneer Tikka Butter Masala
+<5>,Paneer Butter Masala
+<6>,Mushroom Masala
+<7>,Pindi Chana
+<8>,Corn Palak
+<9>,Paneer Lababder
+<10>,Paneer Kadai
+<11>,Veg Jalfrezi
+<12>,Mixed Vegetable
+<13>,Punjabi Aloo Dum
+<14>,Chicken Bharta
+<15>,Kasa Chicken
+<16>,Chicken Kadhai Boneless [4 Pieces]
+<17>,Chicken Reshmi Masala [4 Pieces]
+<18>,Chicken Chap
+<19>,Egg Curry (2 Eggs)
+<20>,Fish Curry
+<21>,Fish Tikka Masala
+<22>,Mutton Roganjosh
+<23>,Mutton Kasa
+<24>,Chilli Mushroom Gravy
+<25>,Veg Dum Biryani
+<26>,Veg Pulao
+<27>,Chicken Biryani
+<28>,Hydrabadi Chicken Biryani
+<29>,Hara Bhara Kebab [6 Pieces]
+<30>,Rajma Glaowti (6 Pcs)
+<31>,Dhai Kebab (6 Pcs)
+<33>,Veg Manchow Soup
+<34>,Roasted Tomato Basil Soup
+<35>,Veg Sweet Corn Soup
+<36>,Cream Of Mushroom Soup
+<37>,Non Veg Manchow Soup
+<38>,Non Veg Sweet Corn Soup
+<39>,Paneer Chilli Dry
+<40>,Corn Salt & Pepper
+<41>,Spring Roll
+<42>,Crispy Chilli Babycorn
+<43>,Crispy Chilli Mushroom
+<44>,Paneer Schezwan Dry
+<45>,Spicy Cheese Dragon Roll (5 Pcs)
+<46>,Drums Of Heaven
+<47>,Chilli Chicken
+<48>,Chicken Salt & Pepper
+<49>,Chicken Spring Roll
+<50>,Chilli Garlic Chicken
+<51>,Fish Fry
+<52>,Fish Salt & Pepper
+<53>,Chilli Paneer
+<54>,Chilli Garlic French Fries
+<55>,Fish Finger (6 Pcs)
+<56>,Cheese Paneer Roll
+<57>,Paneer Roll
+<58>,Paneer Kati Roll
+<59>,Double Egg Roll
+<60>,Chicken Chilli Roll
+<61>,Chicken Cheese Roll
+<62>,Chicken Kati Roll
+<63>,Chicken Hakka Noodles
+<64>,Daal Makhani
+<65>,Rumali Roti
+<66>,Lachha Paratha Plain
+<70>,Yellow Dal Tadka + Jeera Rice + Salad
+<73>,Chicken Butter Masala +laccha Paratha( 1 Pc)
+<76>,Paneer Tikka Butter Masala
+<77>,Paneer Butter Masala
+<78>,Mushroom Masala
+<79>,Pindi Chana
+<80>,Corn Palak
+<81>,Paneer Lababder
+<82>,Paneer Kadai
+<83>,Veg Jalfrezi
+<84>,Mixed Vegetable
+<85>,Punjabi Aloo Dum
+<86>,Tawa Paneer
+<87>,Chicken Tikka Butter Masala [4 Pieces]
+<88>,Chicken Bharta
+<89>,Kasa Chicken
+<90>,Chicken Kadhai Boneless [4 Pieces]
+<91>,Chicken Reshmi Masala [4 Pieces]
+<92>,Chicken Chap
+<93>,Egg Curry (2 Eggs)
+<94>,Fish Curry
+<95>,Fish Tikka Masala
+<96>,Mutton Roganjosh
+<97>,Mutton Kasa
+<98>,Chilli Mushroom Gravy
+<99>,Veg Ball Manchurian
+<101>,Chilli Oyster Mushroom
+<102>,Chinese Veg With Hunan Sauce
+<103>,Chicken Manchurian
+<106>,Veg Dum Biryani
+<107>,Steamed Rice
+<108>,Jeera Pulao
+<109>,Peas Pulao
+<110>,Veg Pulao
+<111>,Chicken Biryani
+<112>,Special Chicken Biryani
+<113>,Hydrabadi Chicken Biryani
+<117>,Hara Bhara Kebab [6 Pieces]
+<118>,Rajma Glaowti (6 Pcs)
+<119>,Dhai Kebab (6 Pcs)
+<132>,Veg Manchow Soup
+<133>,Roasted Tomato Basil Soup
+<134>,Veg Sweet Corn Soup
+<135>,Cream Of Mushroom Soup
+<136>,Non Veg Manchow Soup
+<137>,Non Veg Sweet Corn Soup
+<138>,Paneer Chilli Dry
+<139>,Corn Salt & Pepper
+<140>,Spring Roll
+<141>,Crispy Chilli Babycorn
+<142>,Crispy Chilli Mushroom
+<143>,Paneer Schezwan Dry
+<144>,Spicy Cheese Dragon Roll (5 Pcs)
+<145>,Drums Of Heaven
+<146>,Chilli Chicken
+<147>,Chicken Salt & Pepper
+<148>,Wok Toast Chilli Chicken
+<149>,Chicken Spring Roll
+<150>,Chilli Garlic Chicken
+<151>,Fish Fry
+<152>,Fish In Hot Garlic Sauce
+<153>,Fish Salt & Pepper
+<154>,Chilli Fish
+<155>,Chilli Paneer
+<156>,Chilli Garlic French Fries
+<157>,French Fries
+<161>,Fish Finger (6 Pcs)
+<162>,Fish Pop Corn
+<163>,Smoked Chicken Wings (6 Pcs)
+<164>,Veg Pan Fried Momo
+<165>,Veg Momo Steamed
+<166>,Veg Agio Olio Momo
+<167>,Veg Fried Momo
+<168>,Chicken Agio Olio Momo [6 Pcs]
+<169>,Chicken Fried Momos [6 Pcs]
+<170>,Chicken Momo Steamed [6 Pcs]
+<171>,Chicken Pan Fried Momos [6 Pcs]
+<172>,Cheese Paneer Roll
+<173>,Paneer Roll
+<174>,Paneer Kati Roll
+<175>,Aloo Tandoori Roll
+<176>,Double Egg Roll
+<177>,Chicken Chilli Roll
+<178>,Chicken Cheese Roll
+<179>,Chicken Kati Roll
+<182>,Veg Hakka Noodles
+<188>,Veg Fried Rice
+<189>,Chicken Hakka Noodles
+<190>,Egg Fried Rice
+<191>,Chicken Fried Rice
+<192>,Egg Hakka Noodles
+<193>,Mixed Fried Rice (egg, Chicken & Prawn)
+<194>,Mixed Noodles (egg, Chicken & Prawn)
+<195>,Pan Fried Chicken Noodles
+<196>,Daal Makhani
+<197>,Dhaba Style Dal Tardka
+<198>,Yellow Daal Tadka
+<199>,Rumali Roti
+<200>,Lachha Paratha Plain
+<208>,Mixed Raita
+<209>,Green Salad
+<210>,Plain Curd
+<214>,Packaged Water (1 L)
+<215>,Coke (500 Ml)
+<216>,Packaged Water (500 Ml)
+<217>,Diet Coke (750 Ml)
+<218>,Thumsup (500 Ml)
+<225>,Normal Tea
+<226>,Masala Tea
+<227>,Saffron Tea
+<228>,Fresh Lime Soda Mix [300 Ml]
+<229>,Fresh Lime Soda Salt [300 Ml]
+<230>,Fresh Lime Soda Sweet [300 Ml]
+<231>,Fresh Lime Water Mix [300 Ml]
+<232>,Salt Fresh Lime Water [300 Ml]
+<233>,Sweet Fresh Lime Water [300 Ml]
+<237>,Brownie Shake [300 Ml]
+<238>,Extra Ice Cream (1 Scoop)
+<239>,Extra Kitkat
+------End menu page for Punjabi Panda---------
+Thought: Veg Pulao is at index 110 and is the closest match to the order. I need to add it to the cart. 
+Action: ADD 110,1
+Observation: Added 1 of item 110 to cart
+Thought: I'm done with the order. Time to checkout. 
+Action: CHECKOUT
+Observation: Order placed!

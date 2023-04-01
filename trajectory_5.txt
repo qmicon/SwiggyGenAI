@@ -1,0 +1,187 @@
+Instruction: Order Peppy paneer and a big party special combo from Dominos.
+Observation: Search Bar
+Thought: I need to first pull up menu of Dominos
+Action: SEARCH DOMINO'S
+Observation: 
+------Begin search results for DOMINO'S--------
+<0>,Domino's Pizza
+<1>,The Dugout
+<2>,Pizza Huts Shop
+<3>,The Park
+<4>,Sandwich Xpress
+<5>,Gusto Pizza
+<6>,Pizza Factory
+<7>,Ya Burger
+<8>,The Pizza Palace
+<9>,The Burger Factory by DON GIOVANNIS
+<10>,Don Giovanni's
+<11>,Gusto Cafe & Kitchen
+<12>,Mozza
+<13>,LEBANESE N MORE
+<14>,Beef Feast
+<15>,Gambit's Pizza
+------End search results for DOMINO'S--------
+Thought: Domino's Pizza closely resembles my search term. It is at index 0. 
+Action: CLICK 0
+Observation: 
+------Begin menu page for Domino's Pizza-------
+<42>,Peppy Chicken Nuggets
+<43>,Moroccan Spice Chicken Chunks
+<44>,Cheesy Meatballs
+<45>,Roasted Chicken Wings Classic Hot Sauce
+<46>,Chicken Meatballs Peri-Peri Seasoning
+<47>,Boneless Chicken Wings Peri-Peri
+<48>,Chicken Meatballs Peri-Peri Sauce
+<49>,Tomato Ketchup
+<50>,Paneer Tikka Stuffed Garlic Bread
+<51>,Chicken Pepperoni Stuffed Garlic Bread
+<52>,Garlic Breadsticks
+<53>,Cheesy Jalapeno Dip
+<54>,Cheesy Dip
+<55>,Choco Lava Cake
+<56>,Classic Stuffed Garlic Bread
+<57>,Taco Mexicana Veg
+<58>,Chicken Parcel
+<59>,Burger Pizza - Classic Veg
+<60>,Burger Pizza - Premium Veg
+<61>,Burger Pizza - Classic Non Veg
+<62>,Creamy Tomato Pasta Veg
+<63>,Tikka Masala Pasta Veg
+<64>,Moroccan Spice Pasta Veg
+<65>,Creamy Tomato Pasta Non Veg
+<66>,Tikka Masala Pasta Non Veg
+<67>,Moroccan Spice Pasta Non Veg
+<68>,Taco Mexicana Veg (Single)
+<69>,Basil Pesto Dip
+<70>,Harissa Dip
+<71>,Pepsi 475ml
+<72>,Mirinda 475ml
+<73>,Pepsi Black Can 300ml
+<74>,7Up 475ml
+<75>,Bailley One (500ml)
+<76>,Lipton Ice Tea ( 350 ml)
+<77>,B Natural Alphonsos from Ratnagiri (300 ml)
+<78>,B Natural Mixed Fruit from Himalayas (300 ml)
+<79>,Nagpur Orange
+<80>,Butterscotch Mousse Cake
+<81>,Red Velvet Lava Cake
+<82>,Brownie Fantasy
+<96>,Meal for 2: Veg Extravaganza & Peppy Paneer
+<97>,Meal for 2: Fresh Veggie & Peppy Paneer
+<98>,Meal for 2: Farmhouse & Corn n Cheese
+<99>,Meal for 2: Chicken Dominator & Chicken Golden Delight
+<100>,Meal for 2: Paneer Paratha & Corn Paratha Pizza
+<101>,Meal for 2: Moroccan Pasta Pizza & Corn and Cheese
+<102>,Meal for 4: Corn n Cheese & Farmhouse
+<103>,Meal for 4: Feast Veg Extravanga & Farmhouse
+<104>,Meal for 4: Peppy Paneer & Veg Paradise
+<105>,Meal for 4: Farmhouse & Veg Paradise
+<106>,Meal for 4: Pepper BBQ Chicken & Chicken Dominator
+<107>,Meal for 4: Pepper BBQ Chicken & Spiced Double Chicken
+<108>,Meal for 4: Pepper BBQ Chicken & Chicken Sausage
+<109>,Meal for 4: Veg Value Pizza
+<110>,Meal for 4: Non Veg Value Pizza
+<111>,Meal for 2: Moroccan Pasta Pizza & Achari Do Pyaza
+<112>,Meal for 2: Farmhouse & Veg Extravaganza
+<113>,Meal for 2: Veg Paradise & Farmhouse
+<114>,Meal for 2: Pepper BBQ Chicken & Spiced Double Chicken
+<115>,Meal for 2: Pepper BBQ Chicken & Chicken Dominator
+<116>,Meal for 4: Margherita & Peppy Paneer
+<117>,Meal for 4: Feast Veg Extravanga & Indo Tandoori Paneer
+<118>,Meal for 4: Veg Chessy Pizza
+<119>,Meal for 4: Veg Loaded Pizza
+<120>,Meal for 4: Veg Pizza Mania Loaded
+<121>,Meal for 4: Non Veg Pizza Mania Value
+<122>,Match Day Special Combo @ Rs
+<123>,Match Day Special Combo @ Rs
+<124>,Match Day Special Party Combo @ Rs
+<125>,Match Day Special Combo @ Rs
+<126>,Match Day Special Combo @ Rs
+<127>,Match Day Special Combo @ Rs
+<128>,Match Day Special Party Combo @ Rs
+<171>,Peppy Chicken Nuggets
+<172>,Moroccan Spice Chicken Chunks
+<173>,Cheesy Meatballs
+<174>,Roasted Chicken Wings Classic Hot Sauce
+<175>,Chicken Meatballs Peri-Peri Seasoning
+<176>,Boneless Chicken Wings Peri-Peri
+<177>,Chicken Meatballs Peri-Peri Sauce
+<178>,Tomato Ketchup
+<179>,Paneer Tikka Stuffed Garlic Bread
+<180>,Chicken Pepperoni Stuffed Garlic Bread
+<181>,Garlic Breadsticks
+<182>,Cheesy Jalapeno Dip
+<183>,Cheesy Dip
+<184>,Choco Lava Cake
+<185>,Classic Stuffed Garlic Bread
+<186>,Taco Mexicana Non Veg
+<187>,Taco Mexicana Veg
+<188>,Chicken Parcel
+<189>,Veg Parcel
+<190>,Burger Pizza - Classic Veg
+<191>,Burger Pizza - Premium Veg
+<192>,Burger Pizza - Classic Non Veg
+<193>,Creamy Tomato Pasta Veg
+<194>,Tikka Masala Pasta Veg
+<195>,Moroccan Spice Pasta Veg
+<196>,Creamy Tomato Pasta Non Veg
+<197>,Tikka Masala Pasta Non Veg
+<198>,Moroccan Spice Pasta Non Veg
+<199>,Taco Mexicana Veg (Single)
+<200>,Basil Pesto Dip
+<201>,Harissa Dip
+<202>,Pepsi 475ml
+<203>,Mirinda 475ml
+<204>,Pepsi Black Can 300ml
+<205>,7Up 475ml
+<206>,Bailley One (500ml)
+<207>,Lipton Ice Tea ( 350 ml)
+<208>,B Natural Alphonsos from Ratnagiri (300 ml)
+<209>,B Natural Mixed Fruit from Himalayas (300 ml)
+<210>,Nagpur Orange
+<211>,Butterscotch Mousse Cake
+<212>,Red Velvet Lava Cake
+<213>,Brownie Fantasy
+<227>,Meal for 2: Veg Extravaganza & Peppy Paneer
+<228>,Meal for 2: Fresh Veggie & Peppy Paneer
+<229>,Meal for 2: Farmhouse & Corn n Cheese
+<230>,Meal for 2: Chicken Dominator & Chicken Golden Delight
+<231>,Meal for 2: Paneer Paratha & Corn Paratha Pizza
+<232>,Meal for 2: Moroccan Pasta Pizza & Corn and Cheese
+<233>,Meal for 4: Corn n Cheese & Farmhouse
+<234>,Meal for 4: Feast Veg Extravanga & Farmhouse
+<235>,Meal for 4: Peppy Paneer & Veg Paradise
+<236>,Meal for 4: Farmhouse & Veg Paradise
+<237>,Meal for 4: Pepper BBQ Chicken & Chicken Dominator
+<238>,Meal for 4: Pepper BBQ Chicken & Spiced Double Chicken
+<239>,Meal for 4: Pepper BBQ Chicken & Chicken Sausage
+<240>,Meal for 4: Veg Value Pizza
+<241>,Meal for 4: Non Veg Value Pizza
+<242>,Meal for 2: Moroccan Pasta Pizza & Achari Do Pyaza
+<243>,Meal for 2: Farmhouse & Veg Extravaganza
+<244>,Meal for 2: Veg Paradise & Farmhouse
+<245>,Meal for 2: Pepper BBQ Chicken & Spiced Double Chicken
+<246>,Meal for 2: Pepper BBQ Chicken & Chicken Dominator
+<247>,Meal for 4: Margherita & Peppy Paneer
+<248>,Meal for 4: Feast Veg Extravanga & Indo Tandoori Paneer
+<249>,Meal for 4: Veg Chessy Pizza
+<250>,Meal for 4: Veg Loaded Pizza
+<251>,Meal for 4: Veg Pizza Mania Loaded
+<252>,Meal for 4: Non Veg Pizza Mania Value
+<253>,Match Day Special Combo @ Rs
+<254>,Match Day Special Combo @ Rs
+<255>,Match Day Special Party Combo @ Rs
+<256>,Match Day Special Combo @ Rs
+<257>,Match Day Special Combo @ Rs
+<258>,Match Day Special Combo @ Rs
+<259>,Match Day Special Party Combo @ Rs
+------End menu page for Domino's Pizza-------
+Thought: There are multiple orders and you need to think step by step. Peppy Paneer & Veg Paradise is the closest thing to the order item 1 and it is at index 235. 
+Action: ADD 235,1
+Observation: Added 1 of item 235 to cart
+Thought: Match Day Special Combo is the closest thing to the order item 2 and it is at index 254.  I need to add it to the cart. 
+Action: ADD 254,1
+Observation: Added 1 of item 254 to cart
+Thought: I'm done with the order. Time to checkout. 
+Action: CHECKOUT
+Observation: Order placed!

@@ -1,0 +1,99 @@
+Instruction: Order veg thali from a dhaba
+Observation: Search Bar
+Thought: I need to first pull up menu of a dhaba.
+Action: SEARCH DHABA
+Observation: 
+-----Begin search results for DHABA-----
+<0>,Dhaba Junction
+<1>,Hotel Pan Asia Continental
+<2>,Jai Hind Dhaba-Hazra
+<3>,Amritsari Dhaba
+<4>,The Dugout
+<5>,Sharma Dhaba
+<6>,Dilli Dhaba
+<7>,Punjabi Panda
+<8>,Apna Dhaba
+<9>,Azad Hind Dhaba
+<10>,Ballu Da Dhaba
+<11>,Yaara Da Dhaba
+<12>,Rang De Basanti Dhaba
+<13>,The Park
+<14>,Lords Dhaba
+<15>,Dhaba Junction
+-----End search results for DHABA-----
+Thought: Dhaba Junction closely resembles my search term. It is at index 0. 
+Action: CLICK 0
+Observation: 
+----Begin menu page for Dhaba Junction-----
+<0>,Veg Thali
+<1>,Chicken Thalis
+<2>,Egg Thali
+<3>,Fish Thali
+<4>,Mutton Thali
+<5>,Aloo Matar
+<6>,Palak Matar
+<7>,Mixed Vegetable
+<8>,Jeera Aloo Special
+<9>,Tawa Roti
+<10>,Tandoori Roti
+<11>,Tawa Butter Roti
+<12>,Tandoori Butter Roti
+<13>,Laccha Paratha
+<14>,Butter Naan
+<15>,Aloo Paratha
+<16>,Garlic Naan
+<17>,Paneer Naan
+<18>,Masala Kulcha
+<19>,Desi Ghee Veg Khichdi
+<20>,Basmati Rice [750 Ml]
+<21>,Jeera Rice [750 Ml]
+<22>,Green Peas Pulao [750 Ml]
+<23>,Veg Pulao [750 Ml]
+<24>,Kashmiri Pulao [750 Ml]
+<25>,Paneer Pulao [750 Ml]
+<26>,Veg Pulao With Egg [750 Ml]
+<27>,Bundi Raita
+<28>,Mixed Raita
+<29>,Special Lassi
+<30>,Veg Thali
+<31>,Chicken Thalis
+<32>,Egg Thali
+<33>,Fish Thali
+<34>,Mutton Thali
+<52>,Aloo Matar
+<57>,Palak Matar
+<58>,Mixed Vegetable
+<59>,Jeera Aloo Special
+<77>,Egg Omelette [2pcs]
+<120>,Tawa Roti
+<121>,Tandoori Roti
+<122>,Tawa Butter Roti
+<123>,Tandoori Butter Roti
+<124>,Plain Paratha
+<125>,Laccha Paratha
+<126>,Butter Naan
+<127>,Aloo Paratha
+<128>,Garlic Naan
+<129>,Paneer Naan
+<130>,Masala Kulcha
+<131>,Desi Ghee Veg Khichdi
+<132>,Basmati Rice [750 Ml]
+<133>,Jeera Rice [750 Ml]
+<134>,Green Peas Pulao [750 Ml]
+<135>,Veg Pulao [750 Ml]
+<136>,Kashmiri Pulao [750 Ml]
+<137>,Paneer Pulao [750 Ml]
+<138>,Veg Pulao With Egg [750 Ml]
+<141>,Roasted Papad
+<142>,Dahi
+<143>,Bundi Raita
+<144>,Mixed Raita
+<145>,Special Lassi
+<146>,Gulab Jamun - 2pcs
+----End menu page for Dhaba Junction-----
+Thought: Veg Thali is the closest thing to the order and it is at index 0. I need to add it to the cart. 
+Action: ADD 0,1
+Observation: Added 1 of item 0 to cart
+Thought: I'm done with the order. Time to checkout. 
+Action: CHECKOUT
+Observation: Order placed!

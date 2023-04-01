@@ -1,0 +1,207 @@
+Instruction: Order mirinda from Mcdonalds or its closest alternative
+Observation: Search Bar
+Thought: I need to first pull up menu of Mcdonalds restaurant
+Action: SEARCH MCDONALDS
+Observation: 
+-----Begin search results for MCDONALDS--------
+<0>,KFC
+<1>,Fries Before Guys
+<2>,Burger King
+<3>,KFC
+<4>,SBFC Food Funda
+<5>,Biggies Burger
+<6>,Wbfc
+<7>,Kake D Hatti
+<8>,Fat Mamma's
+<9>,Burger In Law
+<10>,Go 69 Pizza
+<11>,Jai Hind Dhaba-Hazra
+<12>,Bachan's Dhaba
+<13>,Azad Hind Dhaba
+<14>,Arsalan
+<15>,Rang De Basanti Dhaba
+<16>,Cafe Coffee Day
+<17>,The Pizza Palace
+<18>,Paradise kitchen
+<19>,Anglo Bongs Caffe
+<20>,Santa Delivers
+<21>,Azad Hind Hotel Ballygunge
+<22>,GHARAR HASAL
+<23>,Honey Da Dhaba
+<24>,Pizza Huts Shop
+<25>,CLOUD SOCIAL ROOFTOP LOUNGE
+<26>,UDDTA PUNJAB by DON GIOVANNIS
+<27>,Cafe Sadda Haq
+<28>,Palki
+<29>,Uddta Punjab by Don Gio (Science City)
+<30>,Banjara
+<31>,Beefy Affair
+<32>,Crazy Chaap Corner
+<33>,Apna Dhaba
+<34>,House Of Punjab
+<35>,Ballu Da Dhaba
+<36>,Starbucks Coffee
+<37>,Yaara Da Dhaba
+<38>,The Burger Factory by DON GIOVANNIS
+<39>,Cheeky Chicken
+<40>,Burger Express
+<41>,BK Cafe
+<42>,Hungergasm
+<43>,The Chicken King
+<44>,Bohot Cheesy
+<45>,BFC-BENGAL FRIED CHICKEN
+<46>,Food Court
+<47>,Punjabi Zaika
+<48>,Hot Wings
+<49>,Oven to plate
+<50>,AG's Burger
+<51>,KEBAB-E-BIRYANI
+<52>,GANESH HOTEL
+<53>,SANDWICH AUR WAFFLE CO
+<54>,GuptaJi's Veg Rasoi
+<55>,Hotel Rani
+<56>,Icy N Spicy
+<57>,Indiana Burgers
+<58>,Kitchen By The Pond
+<59>,Annapurna Hotel
+<60>,BAKED and FRIED HUB
+<61>,Hunger bites
+<62>,Joey's Pizza
+<63>,Steak lovers
+<64>,Wow chicken
+<65>,Craveopedia
+<66>,HUNGER TWISTER
+<67>,THE FRIED CHICKEN & MORE
+<68>,The Taste Of Cheese
+<69>,PPurple Turtle
+<70>,The Milky Ride
+<71>,AM 2 PM CAFE
+<72>,THE EGG STORY
+<73>,AM to PM Fast Food
+<74>,Yummy Express
+<75>,BABAI FOOD CENTRE
+<76>,Real Food's Factory
+<77>,Shaina Chicken Corner
+<78>,Joey's pizza place
+<79>,SAFE HOUSE
+<80>,Fried N Grill
+<81>,Neelam Restaurant
+<82>,Tyre Patty
+<83>,DOUBLE TROUBLE
+<84>,Wow! Chicken By Wow! Momo
+<85>,Bismillah Stores
+<86>,Hotel Pan Asia Continental 
+<87>,Aalishan Restaurant & Caterer
+<88>,TADKA
+<89>,Stacked Burgers
+<90>,The Biryani Inc.
+<91>,Khana Americana
+<92>,BANGALIR THALI
+<93>,The Chicken Xpress
+<94>,The Baker's House
+-----End search results for MCDONALDS--------
+Thought: I cannot find Mcdonalds in the results. It is probably not available. KFC looks like a good alternative to try. It is at index 0. 
+Action: CLICK 0
+Observation: 
+-----Begin menu page for KFC--------
+<0>,Family Feast 1
+<1>,Peri Peri 10 Pc Chicken Strips & 2 Dips
+<2>,Stay Home Bucket
+<3>,Mingles Bucket Meal
+<4>,Mega Feast
+<5>,6pc Hot & Crispy with Dynamite Sauce
+<6>,6pc Hot & Crispy with Nashville Sauce
+<7>,Smoky Red Grilled Chicken Biryani Combo
+<8>,Classic Biryani Combo
+<9>,Super Snacker Combo
+<10>,Chick’n Wings Combo
+<11>,Classic Zinger Meal<12>,Chick'n Strips Solo Combo
+<13>,Biryani Black Meal
+<14>,Solo Black Combo
+<15>,Peri Peri 10 Strips with Dynamite
+<16>,Peri Peri 10 Strips with Nashville
+<17>,Peri Peri 10 Leg Pc & 4 Dips
+<18>,Peri Peri 5 Leg Pc Meal
+<19>,Peri Peri 5 Leg Pc & 2 Dips<20>,Peri Peri 6pc Chicken Strips<21>,Big 8<22>,Ultimate Savings Bucket<23>,Big 12 Bucket<24>,Family Feast 2
+<25>,Hot & Crispy Chicken -8 pcs<26>,Hot & Crispy Chicken -6 pc<27>,Smoky Red Grilled Chicken -5pc<28>,Chicken Dipsums Meal
+<29>,Chicken Dipsums (6 Pcs
+<30>,Chicken Dipsums & Hot Wings Combo
+<31>,Classic Chicken Biryani Bucket -Large<32>,Popcorn Chicken Biryani Bucket -Large<33>,Smoky Red Grilled Chicken Biryani Bucket -Large<34>,Classic Chicken Biryani Bucket<35>,Popcorn Chicken Biryani Bucket<36>,Smoky Grilled Biryani Bucket<37>,Veg Biryani Bucket<38>,Buddy Meal<39>,Chicken & Krispers Combo<40>,Mixed Zinger Doubles<41>,Classic Zinger Meal<42>,Tandoori Zinger Burger<43>,Classic Zinger<44>,2 Chicken Krisper Burgers
+<45>,2 Veg Krisper Burgers<46>,2 Veg Krispers Meal
+<47>,Veg Zinger Burger<48>,Strips & Rice Combo
+<49>,Chick’n Wings Combo
+<50>,Peri Peri 3pc Chicken Strips<51>,Super Snacker Combo
+<52>,Chicken & Fries Bucket
+<53>,Solo Feast
+<54>,Hot & Crispy Chicken -4pc<55>,Chick'n Strips Solo Combo
+<56>,Popcorn & Fries bucket<57>,Biryani Rice
+<58>,Chicken Popcorn -Large<59>,Chicken Popcorn -Medium<60>,Chicken Popcorn -Regular<61>,2 pc Hot & Crispy Chicken<62>,Smoky Red Grilled Chicken -2 pcs<63>,Hot Chicken Wings -4pc<64>,Hot & Crispy Chicken -1pc<65>,1 pc Smoky Red Chicken<66>,2 pc Veg Patty
+<67>,Chocolate Lava Cake
+<68>,Coffee Mousse Cake
+<69>,Choco Mud Pie
+<70>,Tandoori Masala Dip
+<71>,Pack of 4 Dips
+<72>,Pack of 2 Dip
+<73>,French Fries -Large
+<74>,French Fries -Medium
+<75>,Pepsi PET 475ml
+<76>,Pepsi Can 330 ml
+<77>,7UP Can 330 ml
+<78>,Pepsi Black Can 330 ml
+<79>,Mirinda Can 330 ml
+<80>,Family Feast 1
+<81>,Peri Peri 5 Leg Pc & 2 Dips
+<82>,Peri Peri 10 Pc Chicken Strips & 2 Dips
+<83>,Peri Peri 10 Leg Pc & 4 Dips
+<84>,Stay Home Bucket
+<85>,Friendship Bucket with Dynamite Sauce
+<86>,Friendship Bucket with Nashville Sauce
+<87>,Mingles Bucket Meal
+<88>,Mega Feast
+<89>,6pc Hot & Crispy with Dynamite Sauce
+<90>,6pc Hot & Crispy with Nashville Sauce
+<91>,Smoky Red Grilled Chicken Biryani Combo
+<92>,Classic Biryani Combo
+<93>,Super Snacker Combo
+<94>,Chick’n Wings Combo
+<95>,Classic Zinger Meal<96>,Chick'n Strips Solo Combo
+<97>,Biryani Black Meal
+<98>,Solo Black Combo
+<99>,Peri Peri 10 Strips with Dynamite
+<100>,Peri Peri 10 Strips with Nashville
+<101>,Peri Peri 10 Leg Pc & 4 Dips
+<102>,Peri Peri 5 Leg Pc Meal
+<103>,Peri Peri 5 Leg Pc & 2 Dips<104>,Peri Peri 6pc Chicken Strips<105>,Big 8<106>,Ultimate Savings Bucket<107>,Big 12 Bucket<108>,Family Feast 2
+<109>,Hot & Crispy Chicken -8 pcs<110>,Hot & Crispy Chicken -6 pc<111>,Smoky Red Grilled Chicken -5pc<112>,Chicken Dipsums Meal
+<113>,Chicken Dipsums (6 Pcs
+<114>,Chicken Dipsums & Hot Wings Combo
+<115>,Classic Chicken Biryani Bucket -Large<116>,Popcorn Chicken Biryani Bucket -Large<117>,Smoky Red Grilled Chicken Biryani Bucket -Large<118>,Classic Chicken Biryani Bucket<119>,Popcorn Chicken Biryani Bucket<120>,Smoky Grilled Biryani Bucket<121>,Veg Biryani Bucket<122>,Buddy Meal<123>,Chicken & Krispers Combo<124>,Mixed Zinger Doubles<125>,Classic Zinger Meal<126>,Tandoori Zinger Burger<127>,Classic Zinger<128>,2 Chicken Krisper Burgers
+<129>,2 Veg Krisper Burgers<130>,2 Veg Krispers Meal
+<131>,Veg Zinger Burger<132>,Strips & Rice Combo
+<133>,Chick’n Wings Combo
+<134>,Peri Peri 3pc Chicken Strips<135>,Super Snacker Combo
+<136>,Chicken & Fries Bucket
+<137>,Solo Feast
+<138>,Hot & Crispy Chicken -4pc<139>,Chick'n Strips Solo Combo
+<140>,Popcorn & Fries bucket<141>,Biryani Rice
+<142>,Chicken Popcorn -Large<143>,Chicken Popcorn -Medium<144>,Chicken Popcorn -Regular<145>,2 pc Hot & Crispy Chicken<146>,Smoky Red Grilled Chicken -2 pcs<147>,Hot Chicken Wings -4pc<148>,Hot & Crispy Chicken -1pc<149>,1 pc Smoky Red Chicken<150>,2 pc Veg Patty
+<151>,Chocolate Lava Cake
+<152>,Coffee Mousse Cake
+<153>,Choco Mud Pie
+<154>,Tandoori Masala Dip
+<155>,Pack of 4 Dips
+<156>,Pack of 2 Dip
+<157>,French Fries -Large
+<158>,French Fries -Medium
+<159>,Pepsi PET 475ml
+<160>,Pepsi Can 330 ml
+<161>,7UP Can 330 ml
+<162>,Pepsi Black Can 330 ml
+<163>,Mirinda Can 330 ml
+-----End menu page for KFC--------
+Thought: Mirinda is at index 163 and is the closest match to the order. I need to add it to the cart. 
+Action: ADD 163,1
+Observation: Added 1 of item 163 to cart
+Thought: I'm done with the order. Time to checkout. 
+Action: CHECKOUT
+Observation: Order placed!

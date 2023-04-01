@@ -98,8 +98,13 @@ class SwiggyCrawlerStateless:
 
     def render_search_suggestions(self, search_suggest_elements):
         return_string = ""
-        for index, button in enumerate(search_suggest_elements):
+        counter=0
+        for index, button in enumerate(search_suggest_elements):   
+                        
             res_name, res_category  = self.parse_search_suggest(button)
+            if res_category != "Restaurant":
+                continue
+            counter+=1
             return_string+= f"\nid: {index}, name: {res_name}, category: {res_category}"
         return return_string
 
@@ -143,12 +148,17 @@ class SwiggyCrawlerStateless:
 
     def render_search_restaurants(self, search_elements):
         res_string = ""
+        counter = 0
         for index, element in enumerate(search_elements):
+            if counter> 15:
+                return res_string
             parsed_res = self.parse_search_restaurant(element)
             status = parsed_res["Restaurant Status"].strip()
+            if "Closed" in status:
+                continue
             name = parsed_res["Restaurant name"].strip()
-            res_string+= f"\nid:{index},name:{name},status:{status}"
-
+            res_string+= f"\n<{index}>,{name}"
+            counter+=1
         return res_string
 
     def search_restaurant_by_index(self, search_elements, index):
@@ -179,11 +189,17 @@ class SwiggyCrawlerStateless:
     def render_menu_items(self, menu_elements):
         res_string = ""
         for index, element in enumerate(menu_elements):
+            # remove customizable elements
             text = self.parse_menu_element(element)
             IsCustomizable = 'Customisable' in text
             IsNotAvailable = 'Next available' in text
+            if IsCustomizable is True:
+                continue
+            if IsNotAvailable is True:
+                continue
+
             name = text.split(".")[1].strip()
-            res_string+= f"\nid:{index},item:{name},customizable: {IsCustomizable},available:{not IsNotAvailable}"
+            res_string+= f"\n<{index}>,{name}"
 
         return res_string
 
