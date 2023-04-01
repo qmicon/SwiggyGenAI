@@ -1,6 +1,6 @@
 Instruction: Order big grilled chicken from burger king
 Observation: Search Bar
-Action: THINK I need to first pull up menu of a Burger king 
+Action: THINK I need to first find menu of a Burger king 
 Observation: OK
 Action: SEARCH BURGER KING
 Observation: Search results for BURGER KING

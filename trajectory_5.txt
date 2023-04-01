@@ -175,10 +175,11 @@ id:257,item:Match Day Special Combo @ Rs
 id:258,item:Match Day Special Combo @ Rs
 id:259,item:Match Day Special Party Combo @ Rs
 Action: THINK There are multiple orders and you need to think step by step. Peppy Paneer & Veg Paradise is the closest thing to the order item 1 and it is at index 235. 
-Match Day Special Combo is the closest thing to the order item 2 and it is at index 254.  I need to add these respective orders to the cart. 
 Observation: OK
 Action: ADD 235,1
 Observation: Added 1 of item 235 to cart
+Action: THINK Match Day Special Combo is the closest thing to the order item 2 and it is at index 254.  I need to add it to the cart. 
+Observation: OK
 Action: ADD 254,1
 Observation: Added 1 of item 254 to cart
 Action: THINK I'm done with the order. Time to checkout. 

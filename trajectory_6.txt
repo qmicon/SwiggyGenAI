@@ -58,10 +58,12 @@ id:160,item:Eb Red Velvet Thick Shake
 id:161,item:Eb Strawberry Thick Shake
 id:162,item:Eb Watermelon Mojito
 id:176,item:Peri Peri Chicken Leg Piece
-Action: THINK There are multiple orders and you need to think step by step. Aloo Tikki Masti Burger Combo is the closest thing to the order item 1 and it is at index 1. 
-Green Apple Mojito is the closest thing to the order item 2 and it is at index 154.  I need to add these respective orders to the cart. 
+Action: THINK There are multiple orders and I need to think step by step. Aloo Tikki Masti Burger Combo is the closest thing to the order item 1 and it is at index 1. 
+Observation: OK
 Action: ADD 1,1
 Observation: Added 1 of item 1 to cart
+Action: THINK Next, Green Apple Mojito is the closest thing to the order item 2 and it is at index 154.  
+Observation: OK
 Action: ADD 154,1
 Observation: Added 1 of item 154 to cart
 Action: THINK I'm done with the order. Time to checkout. 
