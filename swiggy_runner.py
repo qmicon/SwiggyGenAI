@@ -28,10 +28,8 @@ if len(argv) >= 2:
 		)
 
 # TODO: Update the prompt template with ReAct examples of trajectories.
-prompt_template = """
-You are an agent for swiggy.com, a food ordering web app. You are given:
-	(1) an instruction about the order you need to fulfill
-	(2) a simplified text description of what's visible in the app window (more on that below)
+prompt_template = f"""
+You are an agent for swiggy.com, a food ordering web app. You are given an instruction about the order you need to fulfill
 
 You can issue these commands:
 (1) RESET - for going back to the search bar page
@@ -39,33 +37,24 @@ You can issue these commands:
 (3) CLICK x - to open the menu of restaurant with id:x from search results
 (4) ADD x,y - to add y quantity of item with id:x from menu to the shopping cart
 (5) CHECKOUT - when you are done with adding items and want to place the order 
+(6) THINK - when you want to introspect about what you observe and what you need to do
 
-You mainly see 4 kind of pages in the app:
+You mainly see 3 kind of pages in the app:
 (1) Search Bar page - this is where you start your journey
 (2) Search Results page - this is where you see the restaurant search results after you search for a keyword or restaurant name
 (3) Menu page - this is where you see the menu when you click on restaurant
 
-You can issue CLICK only on the search results page. It will take you to a restaurant menu. 
-You can issue ADD only on the restaurant menu page. It will add items to the shopping cart. 
-
-The format of the browser content is highly simplified; all formatting elements are stripped.
-
-Based on your given objective, issue whatever command you believe will get you closest to achieving your goal.
-You always start on Search Bar page; you should submit a search query that will take you to the best restaurant for achieving your objective. And then interact with that page to achieve your objective.
-
-Don't try to interact with elements that you can't see.
+You can only write inside the Action field. Do not try to print out the observation for search or menu options. Don't try to interact with elements that you can't see.
 Here are some examples:
+===========
 EXAMPLE 1:
-==================================================
-
-==================================================
+{open("trajectory_3.txt", "r").read()}
+===========
 EXAMPLE 2:
-==================================================
-
-
-==================================================
-EXAMPLE 3:
-==================================================
+{open("trajectory_8.txt", "r").read()}
+===========
+REAL:
+Now understand the customer's instruction and act step by step. Make sure to THINK before you interact with the page. 
 """
 
 if (
@@ -81,7 +70,7 @@ if (
 
 	def get_gpt_command(template, context):
 		prompt = template + '\n' + context
-		response = openai.Completion.create(model="text-davinci-002", prompt=prompt, temperature=0.5, best_of=10, n=3, max_tokens=50)
+		response = openai.Completion.create(model="text-davinci-003", prompt=prompt, temperature=0.5, best_of=10, n=3, max_tokens=50)
 		return response.choices[0].text
 
 	def step(state_stack, cmd):
@@ -206,7 +195,7 @@ if (
 			print(f'\nIteration {klk}')
 			print(running_context)
 
-			gpt_cmd = "" # get_gpt_command(prompt_template, running_context)
+			gpt_cmd = get_gpt_command(prompt_template, running_context)
 			gpt_cmd = gpt_cmd.strip()
 
 			if len(gpt_cmd) > 0:
