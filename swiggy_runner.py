@@ -66,6 +66,7 @@ def step(state_stack, cmd, crawler = None):
 	new_state = state_stack[-1]
 	observation = None
 	cmd = cmd.split("\n")[0]
+	bot_response = cmd
 
 	if cmd.startswith("RESET"):
 		# Usage like RESET
@@ -85,11 +86,13 @@ def step(state_stack, cmd, crawler = None):
 			observation = f"Search results for {str_search}" + _crawler.render_search_restaurants(search_elements)
 			new_state = (PageState.SEARCH_RESTAURANTS, search_elements, observation)
 			state_stack.append(new_state)
+			bot_response = f"Searched results for {str_search}"
 		except:
 			search_elements = _crawler.search_directly("")
 			observation = f"Search results for {str_search}" + _crawler.render_search_restaurants(search_elements)
 			new_state = (PageState.SEARCH_RESTAURANTS, search_elements, observation)
 			state_stack.append(new_state)
+			bot_response = f"Searched results for {str_search}"
 
 	elif cmd.startswith("BACK"):
 		# usage like BACK
@@ -117,6 +120,7 @@ def step(state_stack, cmd, crawler = None):
 				# create new state
 				new_state = (PageState.MENU_OPTIONS, menu_elements, observation)
 				state_stack.append(new_state)
+				bot_response = f"Opened menu page for {retaurant_info['Restaurant name'].strip()}"
 			else:
 				# action is not permitted
 				observation = f"Invalid action! We are not on the restaurant search page." #Current page is {prev_obs}
@@ -139,6 +143,8 @@ def step(state_stack, cmd, crawler = None):
 				_crawler.add_menu_item_by_index_x_times(menu_elements, id, qty)
 
 				observation = f"Added {qty} of item {id} to cart"
+				name = _crawler.parse_menu_element(menu_elements[id]).split(".")[1].strip()
+				bot_response = f"Added {qty} {name}"
 			else:
 				# action is not permitted
 				observation = f"Invalid action! We are not on the restaurant menu page." # Current page is {prev_obs}
@@ -148,10 +154,12 @@ def step(state_stack, cmd, crawler = None):
 
 	elif cmd.startswith("CHECKOUT"):
 		# Usage like CHECKOUT
+		_crawler.checkout()
 		observation = "Order placed!"
 		new_state = (PageState.CHECKOUT, None, observation)
 		state_stack.append(new_state)
 		done = True
+		bot_response = observation
 	elif cmd.startswith("THINK"):
 		# Usage like THINK If I want to do stuff, etc.. 
 		observation = "OK"
@@ -161,7 +169,7 @@ def step(state_stack, cmd, crawler = None):
 		new_state = state_stack[-1]
 
 	time.sleep(1)
-	return new_state, observation, done, state_stack
+	return new_state, observation, done, state_stack, bot_response
 
 
 if (

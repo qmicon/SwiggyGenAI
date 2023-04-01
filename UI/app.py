@@ -3,6 +3,8 @@ from flask import Flask, render_template, request, jsonify
 import sys
 from gevent import monkey
 from dotenv import load_dotenv
+import time
+
 monkey.patch_all()
 load_dotenv()
 sys.path.append('..')
@@ -29,17 +31,18 @@ def ask():
 
     while True:
 
-        if message == "":
+        if done:
+            crawler.reset()
+            return_val = {'status':'OK','answer':"What do you want to order next?"}
+            done = False
+        elif message == "":
             running_context += '\nAction: '
             gpt_cmd = get_gpt_command(prompt_template, running_context)
             gpt_cmd = gpt_cmd.strip()
-            running_context += f"{gpt_cmd}"
-            return_val = {'status':'OK','answer':gpt_cmd}
-            running_context += '\nAction: '
-            gpt_cmd = get_gpt_command(prompt_template, running_context)
-            gpt_cmd = gpt_cmd.strip()
-            _, observation, done, state_stack = step(state_stack, gpt_cmd, crawler)
+            _, observation, done, state_stack, bot_res = step(state_stack, gpt_cmd, crawler)
             running_context += f"{gpt_cmd}\nObservation: {observation}"
+            return_val = {'status':'OK','answer':bot_res}
+
         elif message == "help":
             return_val = {'status':'OK','answer': print_help()}
         elif message == "context":
@@ -53,19 +56,10 @@ def ask():
             running_context += '\nAction: '
             gpt_cmd = get_gpt_command(prompt_template, running_context)
             gpt_cmd = gpt_cmd.strip()
-            running_context += f"{gpt_cmd}"
-            return_val = {'status':'OK','answer':gpt_cmd}
-            running_context += '\nAction: '
-            gpt_cmd = get_gpt_command(prompt_template, running_context)
-            gpt_cmd = gpt_cmd.strip()
-            _, observation, done, state_stack = step(state_stack, gpt_cmd, crawler)
+            _, observation, done, state_stack, bot_res = step(state_stack, gpt_cmd, crawler)
             running_context += f"{gpt_cmd}\nObservation: {observation}"
+            return_val = {'status':'OK','answer':bot_res}
 				
-        if done:
-            if return_val:
-                return_val['answer'] += "\nDone"
-                time.sleep(5)
-                crawler.reset()
         print(running_context)
         return jsonify(return_val)
             
